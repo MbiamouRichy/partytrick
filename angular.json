@@ -30,9 +30,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/fontawesome-free/css/all.css",
+              "src/assets/swiper-bundle.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/swiper-bundle.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -93,9 +97,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/fontawesome-free/css/all.css",
+              "src/assets/swiper-bundle.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/swiper-bundle.js"
+            ]
           }
         }
       }

@@ -1,18 +1,241 @@
+/*================= Variables =============*/
 $main-color: #fff8ec;
-*{
-
-  box-sizing: border-box;
+$text-header-color-a: #17372e;
+$btn-color: #fff;
+$btn-bg1: #f94e41;
+$btn-bg2: #ffd8d7;
+/*=================== Placeholder ===============*/
+%div-row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-body{
-  margin: 0;
-  padding: 0;
-  font-family: 'Sweet sans', Arial, sans-serif;
-  font-size: 1rem;
-  line-height: 1.5;
-  font-weight: 400;
+%div-col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+%clip-bottom{
+  -webkit-clip-path: polygon(100% 0, 100% 98%, 93% 97%, 89% 97%, 85% 98%, 80% 98%, 77% 97%, 75% 97%, 73% 98%, 69% 96%, 66% 96%, 63% 97%, 59% 97%, 55% 97%, 51% 96%, 48% 97%, 45% 97%, 42% 97%, 37% 97%, 33% 96%, 30% 96%, 25% 97%, 21% 96%, 19% 98%, 16% 98%, 13% 97%, 10% 96%, 6% 97%, 0 98%, 0 0);
+  clip-path: polygon(100% 0, 100% 98%, 93% 97%, 89% 97%, 85% 98%, 80% 98%, 77% 97%, 75% 97%, 73% 98%, 69% 96%, 66% 96%, 63% 97%, 59% 97%, 55% 97%, 51% 96%, 48% 97%, 45% 97%, 42% 97%, 37% 97%, 33% 96%, 30% 96%, 25% 97%, 21% 96%, 19% 98%, 16% 98%, 13% 97%, 10% 96%, 6% 97%, 0 98%, 0 0);
+}
+%clip-top{
+  -webkit-clip-path: polygon(100% 100%, 100% 0, 95% 4%, 91% 4%, 86% 3%, 82% 6%, 79% 6%, 75% 5%, 70% 5%, 66% 5%, 62% 4%, 58% 4%, 56% 6%, 54% 6%, 50% 6%, 44% 5%, 40% 5%, 36% 6%, 31% 6%, 29% 4%, 23% 3%, 21% 5%, 18% 5%, 11% 6%, 0 4%, 0 100%);
+  clip-path: polygon(100% 100%, 100% 0, 95% 4%, 91% 4%, 86% 3%, 82% 6%, 79% 6%, 75% 5%, 70% 5%, 66% 5%, 62% 4%, 58% 4%, 56% 6%, 54% 6%, 50% 6%, 44% 5%, 40% 5%, 36% 6%, 31% 6%, 29% 4%, 23% 3%, 21% 5%, 18% 5%, 11% 6%, 0 4%, 0 100%);}
+%clip-left{
+  -webkit-clip-path: polygon(100% 100%, 0 100%, 5% 95%, 5% 91%, 5% 88%, 3% 84%, 4% 81%, 5% 78%, 6% 74%, 6% 70%, 6% 68%, 5% 63%, 6% 59%, 6% 53%, 5% 49%, 8% 47%, 6% 44%, 6% 39%, 5% 34%, 5% 30%, 7% 26%, 4% 21%, 5% 18%, 8% 13%, 6% 6%, 0 0, 100% 0);
+  clip-path: polygon(100% 100%, 0 100%, 5% 95%, 5% 91%, 5% 88%, 3% 84%, 4% 81%, 5% 78%, 6% 74%, 6% 70%, 6% 68%, 5% 63%, 6% 59%, 6% 53%, 5% 49%, 8% 47%, 6% 44%, 6% 39%, 5% 34%, 5% 30%, 7% 26%, 4% 21%, 5% 18%, 8% 13%, 6% 6%, 0 0, 100% 0);
+}
+%clip-right{
+  -webkit-clip-path: polygon(0 100%, 97% 100%, 94% 95%, 93% 91%, 94% 87%, 94% 82%, 93% 78%, 92% 74%, 93% 70%, 95% 65%, 94% 58%, 93% 56%, 94% 52%, 94% 45%, 95% 43%, 95% 36%, 93% 34%, 93% 29%, 94% 28%, 95% 24%, 96% 20%, 95% 19%, 95% 14%, 96% 8%, 98% 0, 0 0);
+  clip-path: polygon(0 100%, 97% 100%, 94% 95%, 93% 91%, 94% 87%, 94% 82%, 93% 78%, 92% 74%, 93% 70%, 95% 65%, 94% 58%, 93% 56%, 94% 52%, 94% 45%, 95% 43%, 95% 36%, 93% 34%, 93% 29%, 94% 28%, 95% 24%, 96% 20%, 95% 19%, 95% 14%, 96% 8%, 98% 0, 0 0);
+}
+/*=============================== mixin ==================================*/
+@mixin absolute_div($top, $right, $bottom, $left){
+  position: absolute;
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+}
+/*========================== Main et Bouton ================================*/
 main{
   background: $main-color;
-  min-width: 100%;
   height: 100vh;
+  padding: 20px 70px;
+  overflow: hidden;
+}
+button{
+  @extend %div-row;
+  margin-left: 4px;
+  border-radius: 64px;
+  color: $btn-color;
+  letter-spacing: 0.1em;
+  background-color: $btn-bg1;
+  padding: 10px 16px 12px;
+  flex: 0 0 auto;
+  border-style: none;
+  font-weight: 600;
+  transition: color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) 0s, background-color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+  svg{
+    width: 18px;
+    height: 17px;
+  }
+}
+button:hover{
+  background: $btn-bg2;
+  color: $btn-bg1;
+}
+/*=================================== HEADER =========================================*/
+/*===================================================================================*/
+
+header{
+  @extend %div-row;
+  justify-content: space-between;
+  .logo {
+    width: 10%;
+    svg{
+      width: 162px;
+      height: 41px;
+    }
+  }
+  .nav_text{
+    @extend %div-row;
+    justify-content: flex-end;
+    width: 90%;
+  }
+}
+nav .nav_element{
+  @extend %div-row;
+  justify-content: space-around;
+  list-style: none;
+}
+nav .nav_element .nav_link{
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+nav .nav_element .nav_link_dropdown{
+  position: relative;
+}
+nav .nav_element .nav_link a, .nav_link .dropdown .li_dropdown{
+  padding: 8px 12px;
+  font-weight: 600;
+  padding: 8px 12px;
+  color: $text-header-color-a;
+  text-decoration: none;
+  transition: color 0.5s ease;
+}
+nav .nav_element .active a{
+  color: $btn-bg1;
+}
+nav .nav_element .nav_link a:hover, .nav_link .dropdown .li_dropdown:hover{
+  color: $btn-bg1;
+}
+nav .nav_element .nav_link_dropdown .dropdown{
+  display: none;
+  @include absolute_div(30px, none, none, 0);
+  list-style: none;
+  background-color: $btn-bg2;
+  padding: 0 16px;
+  border-radius: 7px;
+}
+
+/*================================= section1 =========================================*/
+/*==================================================================================*/
+.section1{
+  @extend %div-row;
+  justify-content: space-between;
+  margin-top: 10rem;
+}
+.section1 .section1_div1{
+  @extend %div-col;
+  align-items: flex-start;
+  max-width: 50%;
+}
+.section1 .section1_div1 .h1_section1{
+  margin-bottom: 0.4em;
+  font-family: Ivypresto;
+  font-size: 5.5rem;
+  line-height: 1;
+  font-weight: 500;
+}
+.section1 .section1_div1 .row1_section1_div1{
+  @extend %div-row;
+  border-bottom: 2px dotted $text-header-color-a;
+  margin-bottom: 2em;
+  .p_section1{
+    display: block;
+    width:  410px;
+    height: 120px;
+    font-weight: 500;
+  }
+}
+.section1 .section1_div1 .p2_section1{
+  width: 320px;
+  height: 67px;
+  font-family: "Gt Alpina Extended";
+  font-size: 1.6rem;
+  line-height: 1.4;
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  margin-bottom: 1em;
+}
+.div_btn{
+  width: 340px;
+  @extend %div-row;
+  justify-content: space-between;
+  .btn_start_party, .btn_how_it_work{
+    border-radius: 7px;
+  }
+  .btn_how_it_work{
+    color: $btn-bg1;
+    background: $btn-bg2;
+  }
+  button.btn_how_it_work:hover{
+    background: $btn-bg1;
+    color: $btn-color;
+  }
+}
+.section1_div2{
+  max-width: 50%;
+}
+.section1_div2 .swiper {
+  position: relative;
+  width: 100%;
+  max-height: 800px;
+  max-width: 800px;
+  margin-right: 5%;
+  margin-left: auto;
+    .swiper-wrapper{
+      width: 80%;
+      perspective: 1200px;
+    }
+}
+.swiper-slide{
+  min-width: 90%;
+  height: 500px;
+  img{
+    width: 500px;
+    height: 500px;
+  }
+}
+
+.swiper-slide:nth-child(1n){
+  rotateX: 3deg;
+  @extend %clip-top;
+}
+.swiper-slide:nth-child(1n){
+  rotate: -1deg;
+  @extend %clip-bottom;
+}
+.swiper-slide:nth-child(2n){
+  rotate: 3deg;
+  @extend %clip-right;
+}
+.swiper-slide:nth-child(3n){
+  rotate: -1deg;
+  @extend %clip-left;
+}
+.swiper-slide:nth-child(4n){
+  rotate: 3deg;
+  @extend %clip-bottom;
+}
+
+.swiper .swiper_btn{
+  color: $btn-bg1;
+  background: $btn-bg2;
+  border-radius: 7px;
+  padding: 12px;
+  height: 40px;
+  width: 40px;
+}
+
+.swiper .swiper-button-prev{
+  position: absolute;
+  left: 90px!important;
+}
+.swiper .swiper-button-next{
+  position: absolute;
+  right: -20px;
 }
