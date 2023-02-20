@@ -31,6 +31,30 @@ export class AppComponent {
       centeredSlides: true,
       slidesPerView: 2,
     });
+    // @ts-ignore
+    var swiper2 = new Swiper(".mySwiper2", {
+      effect: "coverflow",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 0,
+        slideShadows: true,
+      },
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".mySwiper2 .swiper-button-next",
+        prevEl: ".mySwiper2 .swiper-button-prev",
+      },
+      loop: true,
+      centeredSlides: false,
+      slidesPerView: "auto",
+    });
+    let texte_div_section2 = document.querySelectorAll('.texte_explication_section2_div2');
+    texte_div_section2.forEach(texte => )
   }
   dropdown(){
     // @ts-ignore
