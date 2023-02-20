@@ -4,6 +4,8 @@ $text-header-color-a: #17372e;
 $btn-color: #fff;
 $btn-bg1: #f94e41;
 $btn-bg2: #ffd8d7;
+$section3_color: #790808;
+$swiper-slide-white: #fff;
 /*=================== Placeholder ===============*/
 %div-row{
   display: flex;
@@ -30,6 +32,9 @@ $btn-bg2: #ffd8d7;
   -webkit-clip-path: polygon(0 100%, 97% 100%, 94% 95%, 93% 91%, 94% 87%, 94% 82%, 93% 78%, 92% 74%, 93% 70%, 95% 65%, 94% 58%, 93% 56%, 94% 52%, 94% 45%, 95% 43%, 95% 36%, 93% 34%, 93% 29%, 94% 28%, 95% 24%, 96% 20%, 95% 19%, 95% 14%, 96% 8%, 98% 0, 0 0);
   clip-path: polygon(0 100%, 97% 100%, 94% 95%, 93% 91%, 94% 87%, 94% 82%, 93% 78%, 92% 74%, 93% 70%, 95% 65%, 94% 58%, 93% 56%, 94% 52%, 94% 45%, 95% 43%, 95% 36%, 93% 34%, 93% 29%, 94% 28%, 95% 24%, 96% 20%, 95% 19%, 95% 14%, 96% 8%, 98% 0, 0 0);
 }
+%clip-bottom-section3{
+  -webkit-clip-path: polygon(0 0, 0 86%, 8% 87%, 12% 87%, 17% 87%, 24% 89%, 28% 89%, 36% 88%, 47% 89%, 47% 89%, 41% 89%, 31% 88%, 50% 90%, 56% 91%, 60% 90%, 65% 90%, 70% 91%, 75% 91%, 79% 91%, 85% 91%, 92% 89%, 100% 88%, 100% 0);
+  clip-path: polygon(0 0, 0 86%, 8% 87%, 12% 87%, 17% 87%, 24% 89%, 28% 89%, 36% 88%, 47% 89%, 47% 89%, 41% 89%, 31% 88%, 50% 90%, 56% 91%, 60% 90%, 65% 90%, 70% 91%, 75% 91%, 79% 91%, 85% 91%, 92% 89%, 100% 88%, 100% 0);}
 /*=============================== mixin ==================================*/
 @mixin absolute_div($top, $right, $bottom, $left){
   position: absolute;
@@ -38,11 +43,11 @@ $btn-bg2: #ffd8d7;
   bottom: $bottom;
   left: $left;
 }
-/*========================== Main et Bouton ================================*/
+/*========================== Main et Bouton et btn-swiper ================================*/
 main{
   background: $main-color;
   width: 100vw;
-  padding: 20px 50px;
+  padding: 20px 60px;
 }
 button{
   @extend %div-row;
@@ -65,6 +70,15 @@ button:hover{
   background: $btn-bg2;
   color: $btn-bg1;
 }
+.swiper_btn{
+  color: $btn-bg1;
+  background: $btn-bg2;
+  border-radius: 7px;
+  padding: 12px;
+  height: 40px;
+  width: 40px;
+}
+
 /*=================================== HEADER =========================================*/
 /*===================================================================================*/
 
@@ -196,8 +210,9 @@ nav .nav_element .nav_link_dropdown .dropdown{
   min-width: 100%;
   height: 500px;
   img{
-    width: 550px;
-    height: 550px;
+    object-fit: cover;
+    width: 500px;
+    height: 500px;
   }
 }
 
@@ -216,15 +231,6 @@ nav .nav_element .nav_link_dropdown .dropdown{
 .section1_div2  .swiper-slide:nth-child(4n + 4){
   rotate: 3deg;
   @extend %clip-right;
-}
-
-.section1_div2  .swiper .swiper_btn{
-  color: $btn-bg1;
-  background: $btn-bg2;
-  border-radius: 7px;
-  padding: 12px;
-  height: 40px;
-  width: 40px;
 }
 
 .section1_div2  .swiper .swiper-button-prev{
@@ -263,6 +269,7 @@ nav .nav_element .nav_link_dropdown .dropdown{
   }
 }
 .section2_div2{
+
   @extend %div-col;
   align-items: flex-start;
   justify-content: space-between;
@@ -286,7 +293,6 @@ nav .nav_element .nav_link_dropdown .dropdown{
   @extend %div-col;
   justify-content: space-around;
   align-items: flex-start;
-
 }
 .section2_div2_div1_div1 {
 
@@ -323,4 +329,127 @@ nav .nav_element .nav_link_dropdown .dropdown{
 }
 .section2 .texte-active{
   display: block;
+}
+
+/*======================================== SECTION3 ===============================*/
+/*=================================================================================*/
+
+.section3, .section3_div1{
+  width: 100%;
+  margin-top: 6rem;
+
+  .section3_div1{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    border-radius: 7px;
+    background: $section3_color;
+  }
+}
+.section3_div1_div2{
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  .swiper-wrapper{
+    margin-top: 3rem;
+  }
+}
+.section3_div1_div2 h2{
+  font-family: Ivypresto,Georgia,sans-serif;
+  font-size: 5rem;
+  line-height: 1;
+  font-weight: 400;
+  color: $swiper-slide-white;
+}
+.section3_div1 .swiper-slide{
+  .a_swiper_slide{
+    text-decoration: none;
+    width: 330px;
+    height: 511px;
+    @extend %div-col;
+    align-items: flex-start;
+    border-radius: 7px;
+    background: $swiper-slide-white;
+    border: 1px solid $swiper-slide-white;
+    transition: all 0.2s ease-in-out;
+  }
+  .a_swiper_slide:hover{
+    border: 3px solid $btn-bg1;
+  }
+}
+
+.a_swiper_slide .slide_img {
+  width: 100%;
+  height: 40%;
+  @extend %clip-bottom-section3;
+  img {
+    border-radius: 7px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+}
+.a_swiper_slide .slide_div{
+  padding: 0 24px;
+  @extend %div-col;
+  align-items: flex-start;
+  height: 55%;
+}
+.section3_div1  .slide_h3,.section3_div1 .slide_p p{
+  color: $text-header-color-a;
+  font-family: Ivypresto, Georgia, sans-serif;
+  text-decoration: none;
+}
+.section3_div1  .slide_h3{
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 400;
+}
+.slide_p{
+  margin-top: 1rem;
+}
+.section3_div1 .slide_div .div_button {
+  width: 100%;
+  @extend %div-row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  margin-top: auto;
+
+  .section_slide_a {
+    display: block;
+    text-decoration: none;
+    min-width: 56px;
+    padding: 0.2em 0.8em 0.3em;
+    border: 1px solid $text-header-color-a;
+    border-radius: 20px;
+    color: $text-header-color-a;
+    font-size: .75rem;
+    line-height: 1.2;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+  }
+  .section_slide_a:hover{
+    color: $btn_bg1;
+    border-color: $btn_bg1;
+  }
+}
+.section3_div1 .div_btn{
+  @extend %div-row;
+}
+.section3_div1 .swiper_btn{
+  background: $btn_bg1;
+  color: $swiper-slide-white;
+}
+.section3_div1 .swiper-button-prev{
+  position: absolute;
+  top: 30px;
+  left: 920px;
+}
+.section3_div1 .swiper-button-next{
+  position: absolute;
+  top: 30px;
+  right: 30px;
 }

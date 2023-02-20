@@ -88,13 +88,13 @@
     <div class="section2_div1">
       <div class="swiper mySwiper2">
         <div class="swiper-wrapper">
-          <div id="swiper1" class="swiper-slide">
+          <div (rotatestart)="loop1()" class="swiper-slide">
             <img src="assets/image/6398b47ccf63034f8ca174d4_Plan-Like-A-Pro-p-800.webp" alt="image5">
           </div>
-          <div id="swiper2" class="swiper-slide">
+          <div (transitionrun)="loop2()" class="swiper-slide">
             <img src="assets/image/6398cdc9bb181e0f4657fe76_BRING-IT-TO-LIFE-p-800.webp" alt="image6">
           </div>
-          <div id="swiper3" class="swiper-slide">
+          <div (change)="loop3()" class="swiper-slide">
             <img src="assets/image/6398cdbc5ad80679a3f7ab70_PICK-YOUR-PARTY.webp" alt="image7">
           </div>
         </div>
@@ -107,7 +107,7 @@
       <div class="section2_div2_div1">
         <div class="section2_div2_div1_div1">
           <h2 class="h2_section_div2 h2_active">Pick your party</h2>
-          <div id="1" class="texte_explication_section2_div2 texte-active">
+          <div id="swiper1" class="texte_explication_section2_div2 texte-active">
               <p>
                 Something for every host, our curated parties cover casual
                 to fancy, low-key to festive, and minimal to maximal occasions.
@@ -119,7 +119,7 @@
         </div>
         <div class="section2_div2_div1_div1">
           <h2 class="h2_section_div2">Bring it to life</h2>
-          <div id="2" class="texte_explication_section2_div2">
+          <div id="swiper2" class="texte_explication_section2_div2">
             <p>
               We go way beyond the basics when it comes to throwing a party. Including a unique,
               curated moment with links to purchase (think tablescape!),
@@ -133,7 +133,7 @@
         </div>
         <div class="section2_div2_div1_div1">
           <h2 class="h2_section_div2">Plan like a pro</h2>
-          <div id="3" class="texte_explication_section2_div2">
+          <div id="swiper3" class="texte_explication_section2_div2">
             <p>
               Friendly reminders (we text you, just like your pals) and thorough checklists make sure the cake gets ordered,
               the invites go out, the dishwasher is empty when your guests arrive, and of course, you have time to freshen up.
@@ -143,6 +143,163 @@
               <div class="div_charge"></div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+  <!------------------------------------ SECTION3 ----------------------------------->
+  <section class="section3">
+    <div class="section3_div1">
+      <div class="section3_div1_div2">
+          <div class="swiper mySwiper3">
+            <h2>Featured parties</h2>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a class="a_swiper_slide" href="#">
+                  <div class="slide_img">
+                    <img src="assets/image/63ed7604fb92826b83040aec_qbNW60Y33F7Dx4QAMYtzEG8o0oEf-TnyTCq9XuehCMg.webp" alt="image1">
+                  </div>
+                  <div class="slide_div">
+                   <h3 class="slide_h3">Mardi Gras</h3>
+                   <div class="slide_p">
+                     <p>
+                       Let the good times roll with a Fat Tuesday
+                       celebration that makes you feel like you're
+                       down on Bourbon Street.
+                     </p>
+                   </div>
+                   <div class="div_button">
+                     <a class="section_slide_a" href="#">Winter</a>
+                     <a class="section_slide_a" href="#">Dinner</a>
+                     <a class="section_slide_a" href="#">Holiday</a>
+                     <a class="section_slide_a" href="#">Casual</a>
+                     <a class="section_slide_a" href="#">Buffet</a>
+                   </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="a_swiper_slide" href="#">
+                  <div class="slide_img">
+                    <img src="assets/image/63d48901599a725d89666c95_dZY516s9XhDW9-GOEVkyaa9WX5c836-r-xyc4cpswmY-p-800.webp" alt="image2">
+                  </div>
+                  <div class="slide_div">
+                    <h3 class="slide_h3">And The Awards Goes To...</h3>
+                    <div class="slide_p">
+                      <p>
+                        Feel like a winner with this glitz and glam filled awards show watch party.
+                      </p>
+                    </div>
+                    <div class="div_button">
+                      <a class="section_slide_a" href="#">Everyday</a>
+                      <a class="section_slide_a" href="#">Cocktail</a>
+                      <a class="section_slide_a" href="#">Winter</a>
+                      <a class="section_slide_a" href="#">Casual</a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="a_swiper_slide" href="#">
+                  <div class="slide_img">
+                    <img src="assets/image/63da8f8019182493608fdf51_0s1U4Ha74tn_7xw-Yq36axBXhzOPrG8ocX1OjHVoac0.webp" alt="image3">
+                  </div>
+                  <div class="slide_div">
+                    <h3 class="slide_h3">Soup-er Bowl Bash</h3>
+                    <div class="slide_p">
+                      <p>
+                        Invite your friends to join you in serving up some
+                        savory soups to fuel up for a big night of watching football!
+                      </p>
+                    </div>
+                    <div class="div_button">
+                      <a class="section_slide_a" href="#">Potluck</a>
+                      <a class="section_slide_a" href="#">Dinner</a>
+                      <a class="section_slide_a" href="#">Casual</a>
+                      <a class="section_slide_a" href="#">Buffet</a>
+                      <a class="section_slide_a" href="#">Winter</a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="a_swiper_slide" href="#">
+                  <div class="slide_img">
+                    <img src="assets/image/634dc06e880480dba5ff8109_2016_01_24_geraldineaspen_0507.webp" alt="image3">
+                  </div>
+                  <div class="slide_div">
+                    <h3 class="slide_h3">Après-Ski</h3>
+                    <div class="slide_p">
+                      <p>
+                        Throw on those argyle sweaters and ski bunny puffers
+                        to enjoy some cocktails that rival a black diamond.
+                        This is a late night cocktail party sure to impress.
+                      </p>
+                    </div>
+                    <div class="div_button">
+                      <a class="section_slide_a" href="#">Everyday</a>
+                      <a class="section_slide_a" href="#">Cocktail Party</a>
+                      <a class="section_slide_a" href="#">Late Night Party</a>
+                      <a class="section_slide_a" href="#">Date Night</a>
+                      <a class="section_slide_a" href="#">Casual</a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="a_swiper_slide" href="#">
+                  <div class="slide_img">
+                    <img src="assets/image/6377d5baccfcaa6d52929d6a_yIcU6PqstsD7qMndKFJ9O0O-UQRR7AlbRhSfO8kyoEE.jpeg" alt="image3">
+                  </div>
+                  <div class="slide_div">
+                    <h3 class="slide_h3">Taco Tuesday</h3>
+                    <div class="slide_p">
+                      <p>
+                        Tacos are best any night of the week.
+                        Plan a festive dinner party and relax, knowing that
+                        you can't go wrong when tacos and margs are involved.
+                        This fiesta is sure to satisfy.
+                      </p>
+                    </div>
+                    <div class="div_button">
+                      <a class="section_slide_a" href="#">Cocktail Party</a>
+                      <a class="section_slide_a" href="#">Dinner Party</a>
+                      <a class="section_slide_a" href="#">Everyday</a>
+                      <a class="section_slide_a" href="#">Kids</a>
+                      <a href="#" class="section_slide_a">Outdoor</a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="a_swiper_slide" href="#">
+                  <div class="slide_img">
+                    <img src="assets/image/63483f6d4bf58b530b02c76e_movie-night-main-p-800.webp" alt="image3">
+                  </div>
+                  <div class="slide_div">
+                    <h3 class="slide_h3">Movie Night</h3>
+                    <div class="slide_p">
+                      <p>
+                        Embrace the funny, nostalgic,
+                        and romantic moments that come with a solid movie night with your pals.
+                        Make this a cozy night in with yummy apps and classy drinks.
+                      </p>
+                    </div>
+                    <div class="div_button">
+                      <a class="section_slide_a" href="#">Every Day</a>
+                      <a class="section_slide_a" href="#">Kids</a>
+                      <a class="section_slide_a" href="#">Cocktail Party</a>
+                      <a class="section_slide_a" href="#">Dinner Party</a>
+                      <a class="section_slide_a" href="#">Outdoor</a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="div_btn">
+              <div class="swiper_btn swiper-button-prev"></div>
+              <div class="swiper_btn swiper-button-next"></div>
+            </div>
+          </div>
       </div>
     </div>
   </section>

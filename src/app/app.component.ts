@@ -52,9 +52,29 @@ export class AppComponent {
       },
       loop: true,
       centeredSlides: false,
-      slidesPerView: 1,
     });
-    this.loop()
+    // @ts-ignore
+    var swiper3 = new Swiper(".mySwiper3", {
+      effect: "coverflow",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 0,
+        slideShadows: true,
+      },
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".mySwiper3 .swiper-button-next",
+        prevEl: ".mySwiper3 .swiper-button-prev",
+      },
+      loop: false,
+      centeredSlides: false,
+      slidesPerView: 3,
+    });
   }
   dropdown(){
     // @ts-ignore
@@ -69,13 +89,27 @@ export class AppComponent {
       drop.style.display='none'
     }
   }
-  loop(){
-      let swiper = document.querySelectorAll('.mySwiper2 .swiper-slide')
+  efface(){
+    let element = document.querySelectorAll(".section2_div2 .texte_explication_section2_div2")
+    element.forEach(element => element.classList.remove('texte-active'))
+
+  }
+  loop1(){
+      let swiper = document.querySelector('#swiper1')
+      this.efface()
+         // @ts-ignore
+      swiper.className += ' texte-active';
+  }
+  loop2(){
+    let swiper = document.querySelector('#swiper3')
+    this.efface()
     // @ts-ignore
-   swiper.forEach(swiper => swiper.addEventListener('', ()=>{
-      // @ts-ignore
-      console.log(swiper.id)
-    })
-   )
-    }
+    swiper.className += ' texte-active';
+  }
+  loop3(){
+    let swiper = document.querySelector('#swiper2')
+    this.efface()
+    // @ts-ignore
+    swiper.className += ' texte-active';
+  }
 }
