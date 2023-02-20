@@ -252,6 +252,7 @@ nav .nav_element .nav_link_dropdown .dropdown{
       .swiper-slide {
         @extend %clip-right;
         background: $main-color;
+        transition: all 2.5s ease;
         img {
           object-fit: cover;
           width: 570px;
@@ -267,6 +268,7 @@ nav .nav_element .nav_link_dropdown .dropdown{
   justify-content: space-between;
   height: 600px;
   padding:  0 20px;
+  max-width: 50%;
 
   .p_section2_div2{
     display: block;
@@ -277,21 +279,30 @@ nav .nav_element .nav_link_dropdown .dropdown{
     letter-spacing: .08em;
   }
 }
-.section1_div2 .section2_div2_div1 {
+.section2_div2, .section2_div2_div1, .section2_div2_div1_div1{
+  width: 100%;
+}
+.section2_div2 .section2_div2_div1 {
   @extend %div-col;
   justify-content: space-around;
   align-items: flex-start;
+
 }
 .section2_div2_div1_div1 {
+
   .h2_section_div2 {
     font-family: Ivypresto, Georgia, sans-serif;
-    font-size: 3rem;
+    font-size: 4rem;
     line-height: 1.1;
     font-weight: 400;
     color: $text-header-color-a;
   }
+  .h2_active{
+    color: $btn-bg1;
+  }
   .texte_explication_section2_div2{
-    margin-top: 1em;
+    margin: 1em 0;
+    display: none;
 
     p{
       font-size: 1.25rem;
@@ -309,4 +320,7 @@ nav .nav_element .nav_link_dropdown .dropdown{
       background: $btn-bg1;
     }
   }
+}
+.section2 .texte-active{
+  display: block;
 }

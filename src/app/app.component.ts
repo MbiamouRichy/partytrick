@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'partytrick';
+  // @ts-ignore
   ngOnInit(){
     // Activation ou Desactivation des li
     let nav_li = document.querySelectorAll('nav li')
@@ -51,10 +52,9 @@ export class AppComponent {
       },
       loop: true,
       centeredSlides: false,
-      slidesPerView: "auto",
+      slidesPerView: 1,
     });
-    let texte_div_section2 = document.querySelectorAll('.texte_explication_section2_div2');
-    texte_div_section2.forEach(texte => )
+    this.loop()
   }
   dropdown(){
     // @ts-ignore
@@ -69,4 +69,13 @@ export class AppComponent {
       drop.style.display='none'
     }
   }
+  loop(){
+      let swiper = document.querySelectorAll('.mySwiper2 .swiper-slide')
+    // @ts-ignore
+   swiper.forEach(swiper => swiper.addEventListener('', ()=>{
+      // @ts-ignore
+      console.log(swiper.id)
+    })
+   )
+    }
 }
