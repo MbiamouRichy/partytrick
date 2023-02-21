@@ -2,7 +2,7 @@
 $main-color: #fff8ec;
 $text-header-color-a: #17372e;
 $btn-color: #fff;
-$btn-bg1: #f94e41;
+$btn-bg1: #f54d40;
 $btn-bg2: #ffd8d7;
 $section3_color: #790808;
 $swiper-slide-white: #fff;
@@ -418,7 +418,8 @@ nav .nav_element .nav_link_dropdown .dropdown{
   text-decoration: none;
 }
 .section3_div1  .slide_h3{
-  font-size: 2rem;
+  font-family: Ivypresto, Georgia, sans-serif;
+  font-size: 1.5rem;
   line-height: 1.2;
   font-weight: 400;
 }
@@ -562,5 +563,169 @@ nav .nav_element .nav_link_dropdown .dropdown{
     line-height: 1.2;
     font-weight: 400;
     color: $swiper-slide-white;
+  }
+}
+
+/*======================================= SECTION4 ========================================*/
+/*========================================================================================*/
+
+.section4{
+  width: 100%;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+
+  .section4_div1{
+    @extend %div-col;
+    align-items: flex-start;
+    width: 100%;
+    h2{
+      margin-top: 0;
+      margin-bottom: 0.4em;
+      font-family: Ivypresto,Georgia,sans-serif;
+      font-size: 5rem;
+      line-height: 1;
+      font-weight: 400;
+    }
+    .p_section4_div1{
+      width: 901px;
+      font-size: 1.5em;
+      margin-bottom: 3rem;
+    }
+  }
+}
+.section4_div2{
+  @extend %div-row;
+  width: 100%;
+  .section4_div2_div1, .section4_div2_div2{
+    @extend %div-col;
+    width: 628px;
+    border-radius: 7px;
+    background: $swiper-slide-white;
+    padding: 24px;
+    height: 328px;
+  }
+  .section4_div2_div2{
+    background: $btn_bg2;
+    margin-left: 20px;
+  }
+}
+.section4_div2_div1_div1, .div_block{
+  @extend %div-col;
+  align-items: flex-start;
+  width: 100%;
+  .div_block{
+    .texte_party_preview{
+      font-family: Ivypresto,Arial,sans-serif;
+      font-size: 1.5rem;
+      letter-spacing: 0.1px;
+      color: $text-header-color-a;
+      svg{
+        width: 21px;
+        height: 21px;
+      }
+    }
+  }
+}
+.souligne{
+  width: 100%;
+  height: 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px dotted $text-header-color-a;
+}
+.section4_div2_div1_div1 .div_block_row {
+  @extend %div-row;
+  justify-content: space-between;
+  width: 100%;
+
+  .div_texte_free {
+   @extend %div-row;
+    align-items: flex-start;
+    h2 {
+      font-family: Ivypresto, Georgia, sans-serif;
+      font-size: 5rem;
+      line-height: 1.1;
+      font-weight: 400;
+    }
+  }
+  .liste{
+    @extend %div-col;
+    align-items: flex-end;
+    justify-content: space-around;
+  }
+}
+.section4_div2_div1_div1 .div_block_row .liste ul{
+  list-style: outside;
+  li{
+    width: 305px;
+    margin-bottom: 0.3em;
+    font-weight: 500;
+  }
+}
+.section4_div2_div1_div2, .section4_div2_div2_div2{
+  width: 100%;
+  margin-top: auto;
+  @extend %div-row;
+  button{
+    @extend %div-row;
+    justify-content: center;
+    border-radius: 7px;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: .08em;
+  }
+}
+.section4_div2_div2 .section4_div2_div1_div1 .div_block .row{
+  width: 100%;
+  @extend %div-row;
+  justify-content: space-between;
+
+  .section4_block2{
+    @extend %div-row;
+    justify-content: space-around;
+
+    a{  text-decoration: none;
+      color: $text-header-color-a;
+      font-size: 0.875rem;
+      line-height: 1.1;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 8px;
+    }
+    a.bold{
+      font-weight: 600;
+    }
+  }
+}
+.section4_div2_div2 .div_texte_pro{
+  @extend %div-col;
+  justify-content: space-around;
+
+  .price,.save{
+    @extend %div-row;
+
+  }
+  .price{
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+    h2{
+      font-family: Ivypresto, Georgia, sans-serif;
+      font-size: 5rem;
+      line-height: 1.1;
+      font-weight: 500;
+    }
+    .sub{
+      margin-bottom: 0.4em;
+      font-weight: 500;
+    }
+  }
+  .save .text-candy{
+    color: $btn_bg1;
   }
 }
