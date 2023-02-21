@@ -119,11 +119,14 @@ nav .nav_element .nav_link{
 }
 nav .nav_element .nav_link_dropdown{
   position: relative;
+  svg{
+    height: 15px;
+    width: 15px;
+  }
 }
-nav .nav_element .nav_link a, .nav_link .dropdown .li_dropdown{
+nav .nav_element .nav_link a, .nav_link .dropdown .li_dropdown, .nav_link_dropdown{
   padding: 8px 12px;
   font-weight: 600;
-  padding: 8px 12px;
   color: $text-header-color-a;
   text-decoration: none;
   transition: color 0.5s ease;
@@ -131,7 +134,7 @@ nav .nav_element .nav_link a, .nav_link .dropdown .li_dropdown{
 nav .nav_element .active a{
   color: $btn-bg1;
 }
-nav .nav_element .nav_link a:hover, .nav_link .dropdown .li_dropdown:hover{
+nav .nav_element .nav_link a:hover, .nav_link_dropdown:hover, .nav_link .dropdown .li_dropdown:hover{
   color: $btn-bg1;
 }
 nav .nav_element .nav_link_dropdown .dropdown{
@@ -870,7 +873,7 @@ footer {
   form .footer-subscribe{
   width: 100%;
   display: block;
-  height: 40px;
+  height: 60px;
   .footer-subscribe_input{
     height: 100%;
     padding: 12px 24px;
@@ -952,6 +955,9 @@ footer {
   top: 0;
   left: 0;
   display: none;
+  transition: all 1s ease-in-out;
+  opacity: 0;
+  animation: appear 1s ease-in-out forwards;
 }
 .poppup_active{
   display: flex;
@@ -1061,4 +1067,14 @@ footer {
   .poppup_close_btn{
     cursor: pointer;
   }
+}
+/*------------- animation appear ---------------*/
+@keyframes appear {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+
 }
