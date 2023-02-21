@@ -21,9 +21,10 @@ $swiper-slide-white: #fff;
   -webkit-clip-path: polygon(100% 0, 100% 98%, 93% 97%, 89% 97%, 85% 98%, 80% 98%, 77% 97%, 75% 97%, 73% 98%, 69% 96%, 66% 96%, 63% 97%, 59% 97%, 55% 97%, 51% 96%, 48% 97%, 45% 97%, 42% 97%, 37% 97%, 33% 96%, 30% 96%, 25% 97%, 21% 96%, 19% 98%, 16% 98%, 13% 97%, 10% 96%, 6% 97%, 0 98%, 0 0);
   clip-path: polygon(100% 0, 100% 98%, 93% 97%, 89% 97%, 85% 98%, 80% 98%, 77% 97%, 75% 97%, 73% 98%, 69% 96%, 66% 96%, 63% 97%, 59% 97%, 55% 97%, 51% 96%, 48% 97%, 45% 97%, 42% 97%, 37% 97%, 33% 96%, 30% 96%, 25% 97%, 21% 96%, 19% 98%, 16% 98%, 13% 97%, 10% 96%, 6% 97%, 0 98%, 0 0);
 }
-%clip-top{
-  -webkit-clip-path: polygon(100% 100%, 100% 0, 95% 4%, 91% 4%, 86% 3%, 82% 6%, 79% 6%, 75% 5%, 70% 5%, 66% 5%, 62% 4%, 58% 4%, 56% 6%, 54% 6%, 50% 6%, 44% 5%, 40% 5%, 36% 6%, 31% 6%, 29% 4%, 23% 3%, 21% 5%, 18% 5%, 11% 6%, 0 4%, 0 100%);
-  clip-path: polygon(100% 100%, 100% 0, 95% 4%, 91% 4%, 86% 3%, 82% 6%, 79% 6%, 75% 5%, 70% 5%, 66% 5%, 62% 4%, 58% 4%, 56% 6%, 54% 6%, 50% 6%, 44% 5%, 40% 5%, 36% 6%, 31% 6%, 29% 4%, 23% 3%, 21% 5%, 18% 5%, 11% 6%, 0 4%, 0 100%);}
+%clip-top {
+  -webkit-clip-path: polygon(0 100%, 0 1%, 9% 1%, 12% 1%, 18% 1%, 18% 1%, 22% 0%, 25% 1%, 27% 1%, 30% 1%, 34% 2%, 38% 2%, 41% 2%, 44% 2%, 47% 3%, 49% 3%, 51% 3%, 54% 3%, 57% 3%, 60% 3%, 63% 4%, 66% 4%, 70% 4%, 73% 4%, 80% 4%, 80% 4%, 84% 4%, 87% 4%, 94% 4%, 100% 3%, 100% 100%);
+  clip-path: polygon(0 100%, 0 1%, 9% 1%, 12% 1%, 18% 1%, 18% 1%, 22% 0%, 25% 1%, 27% 1%, 30% 1%, 34% 2%, 38% 2%, 41% 2%, 44% 2%, 47% 3%, 49% 3%, 51% 3%, 54% 3%, 57% 3%, 60% 3%, 63% 4%, 66% 4%, 70% 4%, 73% 4%, 80% 4%, 80% 4%, 84% 4%, 87% 4%, 94% 4%, 100% 3%, 100% 100%);
+}
 %clip-left {
   -webkit-clip-path: polygon(100% 0, 2% 0, 4% 4%, 5% 6%, 4% 12%, 4% 12%, 4% 14%, 6% 19%, 6% 19%, 5% 20%, 5% 23%, 4% 24%, 6% 27%, 5% 28%, 5% 32%, 5% 32%, 4% 35%, 4% 36%, 5% 36%, 7% 40%, 5% 41%, 5% 42%, 6% 45%, 6% 47%, 5% 48%, 7% 52%, 7% 52%, 6% 54%, 5% 55%, 7% 60%, 7% 60%, 7% 61%, 5% 63%, 5% 64%, 5% 68%, 4% 68%, 4% 72%, 6% 72%, 6% 74%, 6% 76%, 6% 78%, 6% 80%, 3% 81%, 5% 84%, 5% 87%, 5% 89%, 4% 91%, 5% 93%, 3% 100%, 100% 100%);
   clip-path: polygon(100% 0, 2% 0, 4% 4%, 5% 6%, 4% 12%, 4% 12%, 4% 14%, 6% 19%, 6% 19%, 5% 20%, 5% 23%, 4% 24%, 6% 27%, 5% 28%, 5% 32%, 5% 32%, 4% 35%, 4% 36%, 5% 36%, 7% 40%, 5% 41%, 5% 42%, 6% 45%, 6% 47%, 5% 48%, 7% 52%, 7% 52%, 6% 54%, 5% 55%, 7% 60%, 7% 60%, 7% 61%, 5% 63%, 5% 64%, 5% 68%, 4% 68%, 4% 72%, 6% 72%, 6% 74%, 6% 76%, 6% 78%, 6% 80%, 3% 81%, 5% 84%, 5% 87%, 5% 89%, 4% 91%, 5% 93%, 3% 100%, 100% 100%);
@@ -226,7 +227,7 @@ nav .nav_element .nav_link_dropdown .dropdown{
     height: 500px;
   }
 }
-
+/*-------------------- swiper-slide 1 clip-path --------------------*/
 .section1_div2  .swiper-slide:nth-child(4n + 1){
   rotate: -1deg;
   @extend %clip-bottom;
@@ -371,6 +372,7 @@ nav .nav_element .nav_link_dropdown .dropdown{
     margin-top: 3rem;
   }
 }
+/*-------------------------- style of big title -------*/
 .section3_div1_div2 h2{
   font-family: Ivypresto,Georgia,sans-serif;
   font-size: 5rem;
@@ -378,6 +380,7 @@ nav .nav_element .nav_link_dropdown .dropdown{
   font-weight: 400;
   color: $swiper-slide-white;
 }
+/*----------------------- syle of swiper-slide ---------------------*/
 .section3_div1 .swiper-slide{
   .a_swiper_slide{
     text-decoration: none;
@@ -394,7 +397,7 @@ nav .nav_element .nav_link_dropdown .dropdown{
     border: 3px solid $btn-bg1;
   }
 }
-
+/*----------------------- swiper-slide img ------------------------*/
 .a_swiper_slide .slide_img {
   width: 100%;
   height: 40%;
@@ -406,6 +409,7 @@ nav .nav_element .nav_link_dropdown .dropdown{
     height: 100%;
   }
 }
+/*----------------------------------- swiper-slide texte ------------------------------------*/
 .a_swiper_slide .slide_div{
   padding: 0 24px;
   @extend %div-col;
@@ -426,6 +430,7 @@ nav .nav_element .nav_link_dropdown .dropdown{
 .slide_p{
   margin-top: 1rem;
 }
+/*------------------ style of swiper-slide link e.g:(casual) (winter)---------------*/
 .section3_div1 .slide_div .div_button {
   width: 100%;
   @extend %div-row;
@@ -455,6 +460,7 @@ nav .nav_element .nav_link_dropdown .dropdown{
     border-color: $btn_bg1;
   }
 }
+/*------------ style of swiper3 btn ------------------*/
 .section3_div1 .div_btn{
   @extend %div-row;
 }
@@ -485,6 +491,7 @@ nav .nav_element .nav_link_dropdown .dropdown{
   padding: 0 20px;
 
 }
+/*--------------- style of first blog -----------*/
 .section3_div2_div1{
   @extend  %div-col;
   align-items: flex-start;
@@ -525,6 +532,7 @@ nav .nav_element .nav_link_dropdown .dropdown{
     color: $swiper_slide-white;
   }
 }
+/*--------- block with the big image ----------*/
 .section3_div2_div2{
   width: 55%;
   .div_img{
@@ -539,6 +547,7 @@ nav .nav_element .nav_link_dropdown .dropdown{
     }
   }
 }
+/*------------- button halalala ------------*/
 .halalala .block_halalala{
   @extend %div-col;
   align-items: flex-start;
@@ -549,6 +558,7 @@ nav .nav_element .nav_link_dropdown .dropdown{
   border-radius: 7px;
   padding: 24px;
   margin-top: 3rem;
+
   .row_texte{
     @extend %div-row;
     width: 100%;
@@ -573,7 +583,7 @@ nav .nav_element .nav_link_dropdown .dropdown{
   width: 100%;
   padding-top: 6rem;
   padding-bottom: 6rem;
-
+/*--------------- block with the big text and sentence ----------------*/
   .section4_div1{
     @extend %div-col;
     align-items: flex-start;
@@ -593,6 +603,8 @@ nav .nav_element .nav_link_dropdown .dropdown{
     }
   }
 }
+/*--------------- block with the card pro et free ----------------*/
+/*---style des deux block---*/
 .section4_div2{
   @extend %div-row;
   width: 100%;
@@ -609,6 +621,7 @@ nav .nav_element .nav_link_dropdown .dropdown{
     margin-left: 20px;
   }
 }
+/*---------- style of first block(free) ---------*/
 .section4_div2_div1_div1, .div_block{
   @extend %div-col;
   align-items: flex-start;
@@ -626,6 +639,7 @@ nav .nav_element .nav_link_dropdown .dropdown{
     }
   }
 }
+/*--------------- div underline ------------*/
 .souligne{
   width: 100%;
   height: 0;
@@ -633,6 +647,7 @@ nav .nav_element .nav_link_dropdown .dropdown{
   margin-bottom: 1rem;
   border-bottom: 2px dotted $text-header-color-a;
 }
+
 .section4_div2_div1_div1 .div_block_row {
   @extend %div-row;
   justify-content: space-between;
@@ -678,6 +693,8 @@ nav .nav_element .nav_link_dropdown .dropdown{
     letter-spacing: .08em;
   }
 }
+/*---------- style of second block(pro) ---------*/
+
 .section4_div2_div2 .section4_div2_div1_div1 .div_block .row{
   width: 100%;
   @extend %div-row;
@@ -727,5 +744,60 @@ nav .nav_element .nav_link_dropdown .dropdown{
   }
   .save .text-candy{
     color: $btn_bg1;
+  }
+}
+/*----------- div.marge-------------*/
+.marge{
+  padding: 4rem 0;
+}
+
+/*======================================== SECTION5 ==============================*/
+/*===============================================================================*/
+.section5{
+  width: 100%;
+  @extend %div-row;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.section5_div1, .section5_div2{
+  max-width: 50%;
+}
+.section5_div1{
+  @extend %div-col;
+  align-items: flex-start;
+  .h2_section5{
+    width: 516px;
+    margin-top: 0px;
+    margin-bottom: 0.4em;
+    font-family: Ivypresto, Georgia, sans-serif;
+    font-size: 5rem;
+    line-height: 1.1;
+    font-weight: 400;
+  }
+  .p_section5{
+    width: 516px;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    a{
+      color: $btn-bg1;
+      text-decoration: none;
+    }
+  }
+  .learn_more{
+    background: $btn-bg2;
+    color: $btn-bg1;
+    border-radius: 7px;
+  }
+}
+.section5_div2{
+  .div_img{
+    @extend %clip-top;
+    width: 100%;
+    height: 100%;
+    img{
+      object-fit: cover;
+      width: 628px;
+      height: 420px;
+    }
   }
 }
