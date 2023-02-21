@@ -947,10 +947,17 @@ footer {
   height: 100vh;
   width: 100%;
   background-color: $poppup-bg-color;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.poppup_active{
+  display: flex;
 }
 .poppup .poppup_row{
   @extend %div-row;
-  z-index: 999;
   max-width: 60rem;
   border-radius: 0.5rem;
   background: $main-color;
@@ -1050,5 +1057,8 @@ footer {
     position: absolute;
     top: 10px;
     right: 10px;
+  }
+  .poppup_close_btn{
+    cursor: pointer;
   }
 }

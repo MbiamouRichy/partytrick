@@ -1,7 +1,552 @@
+<main>
+  <!----------------------- navbar ----------------------------->
 
+  <header>
+    <div class="logo">
+      <svg viewBox="0 0 170 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <title>Partytrick</title>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M124.165 9.91708L120.83 6.5843L125.253 4.95131L125.211 4.78206L120.493 5.22514L121.907 0.813844L121.746 0.739014L119.198 4.62404L116.539 0.756158L116.38 0.832053L117.92 5.2336L113.19 4.82169L113.153 4.99114L117.622 6.5948L114.382 9.94887L114.495 10.0843L118.528 7.68244L119.219 12.277L119.396 12.2764L119.955 7.67785L124.056 10.0534L124.165 9.91708ZM155.119 21.5245C161.658 18.3625 161.229 12.1243 156.693 12.1243C153.359 12.1243 150.254 15.8443 149.267 19.2782H148.737L149.324 4.62711L149.181 4.71295V4.62711L142.57 6.98788C143.591 8.60625 144.091 10.4991 144.001 12.4105V29.451C144.068 31.3644 143.57 33.2552 142.57 34.8879H150.569C149.569 33.2552 149.071 31.3644 149.138 29.451V21.6962C150.24 17.8474 152.272 16.2306 154.318 16.2306C156.979 16.2306 157.265 21.1382 150.254 22.5117L154.031 30.7816C154.681 32.0525 155.052 33.4477 155.119 34.8736H162.774C161.438 33.1669 160.26 31.3423 159.254 29.4223L155.119 21.5245ZM80.958 18.3625C80.6453 19.4217 79.9556 21.7113 79.1898 24.2535C78.8694 25.317 78.5358 26.4247 78.2108 27.5051C77.3523 24.6435 75.764 19.364 75.0915 17.1463C74.7785 16.3684 74.6581 15.5264 74.7402 14.6919C74.8225 13.8574 75.1049 13.0551 75.5637 12.3532H62.1424V7.24539H61.9135C60.2824 9.93524 56.9056 11.5377 54.2728 12.3532V13.3834H56.8913V29.8086C56.8913 31.9977 58.0789 35.1597 61.6417 35.1597C62.9243 35.2367 64.1941 34.8688 65.2368 34.1181C66.2796 33.3674 67.0313 32.2798 67.365 31.0391C66.5285 31.4696 65.6016 31.6952 64.6607 31.6972C64.3153 31.7344 63.9659 31.693 63.6388 31.5761C63.3116 31.4592 63.0152 31.2697 62.7716 31.022C62.528 30.7743 62.3435 30.4747 62.2321 30.1457C62.1207 29.8166 62.0851 29.4666 62.1281 29.1219V13.3834H65.276C68.3957 13.3834 68.9247 14.9883 69.6422 17.1648L69.6427 17.1663C69.6885 17.3052 69.7351 17.4465 69.7831 17.5899C70.5844 19.9792 73.26 27.7769 75.8212 35.2312C75.6424 35.8372 75.2602 36.363 74.7389 36.72C74.2177 37.0771 73.5892 37.2436 72.9596 37.1914C71.4672 37.1992 70.0174 36.6941 68.8531 35.7606L67.5224 41.5982C68.5074 41.9622 69.5486 42.1511 70.5987 42.1562C73.1742 42.1562 75.3205 40.6252 76.8228 35.8751C77.9288 32.3454 79.0668 28.543 80.031 25.3214L80.0321 25.3178L80.0327 25.3155L80.0338 25.3118L80.034 25.3112L80.0342 25.3105C80.8899 22.4514 81.6083 20.0508 82.0454 18.7059C82.7335 16.5171 83.6195 14.3956 84.6925 12.3675H80.6575C81.9023 13.4978 81.8165 15.5438 80.958 18.3625ZM93.5201 13.3835V29.122C93.4771 29.4667 93.5127 29.8167 93.6241 30.1458C93.7355 30.4748 93.92 30.7744 94.1636 31.0221C94.4072 31.2698 94.7036 31.4593 95.0308 31.5762C95.3579 31.6931 95.7073 31.7345 96.0527 31.6973C96.9934 31.6937 97.9199 31.4682 98.757 31.0392C98.4233 32.2799 97.6716 33.3675 96.6289 34.1182C95.5861 34.8689 94.3163 35.2368 93.0337 35.1598C89.4709 35.1598 88.2833 31.9978 88.2833 29.8087V13.3835H85.6505V12.3533C88.2833 11.5378 91.6458 9.93533 93.2912 7.24548H93.5201V12.3533H98.428L98.1131 13.3835H93.5201ZM132.539 13.2264C127.331 13.2264 128.361 29.852 135.916 29.852C136.982 29.8063 138.018 29.4876 138.925 28.9264C139.832 28.3651 140.579 27.5803 141.096 26.647C140.71 32.0696 138.177 35.1315 134.07 35.1315C129.134 35.1315 125.214 31.0252 125.214 23.5709C125.214 16.7032 128.576 12.1247 134.485 12.1247C136.671 12.2336 138.785 12.9415 140.595 14.1707V22.5836H140.395C138.463 18.9495 135.172 13.2264 132.539 13.2264ZM115.657 14.7141L122.282 12.3534L122.224 29.4511C122.157 31.3645 122.655 33.2553 123.655 34.888H115.657C116.657 33.2553 117.154 31.3645 117.088 29.4511V20.1511C117.154 18.2376 116.657 16.3468 115.657 14.7141ZM45.2732 17.8763H44.8868L45.1873 12.3535L38.5626 14.7143C39.5626 16.347 40.0602 18.2378 39.9934 20.1512V29.4512C40.0602 31.3646 39.5626 33.2554 38.5626 34.8881H46.561C45.561 33.2554 45.0633 31.3646 45.1301 29.4512V20.4087C45.1301 16.8032 49.9234 17.0035 52.0554 19.536H52.1984V12.282C48.6642 11.4092 45.9457 15.1435 45.2732 17.8763ZM106.341 17.8764H106.727C107.4 15.1436 110.133 11.4093 113.681 12.2821V19.5361H113.524C111.406 17.0037 106.598 16.8033 106.598 20.4089V29.4513C106.532 31.3648 107.029 33.2556 108.029 34.8883H100.031C101.031 33.2556 101.529 31.3648 101.462 29.4513V20.1513C101.529 18.2379 101.031 16.3471 100.031 14.7144L106.641 12.3536L106.341 17.8764ZM28.2748 12.1101C32.2096 12.1101 35.0713 13.827 35.0713 18.2767V29.8087C35.0629 31.5934 35.5589 33.3442 36.5021 34.8593H29.863V31.0678C29.4847 32.2345 28.7609 33.2588 27.7873 34.0049C26.8138 34.7509 25.6365 35.1837 24.4115 35.2456C23.6614 35.3075 22.9067 35.2087 22.1978 34.9558C21.4888 34.7029 20.842 34.3017 20.3003 33.7791C19.7587 33.2564 19.3347 32.6243 19.0567 31.9249C18.7787 31.2254 18.6531 30.4747 18.6882 29.7229C18.6882 25.8438 21.6872 24.13 24.57 22.4826C27.2377 20.9581 29.8058 19.4905 29.8058 16.4167V14.3135C29.8058 13.6267 29.4624 13.0973 28.7184 13.0973C27.5978 13.0973 25.6461 15.0141 21.7032 18.8867L21.7032 18.8867C21.1655 19.4148 20.5907 19.9793 19.976 20.5803H19.8186L22.2224 12.9829C24.1938 12.4319 26.2281 12.1386 28.2748 12.1101ZM24.3257 28.8358C24.3257 30.6958 25.1556 31.9406 26.7725 31.9406H26.844C28.5467 31.9406 29.6198 29.6943 29.8058 27.8915V19.2067C29.3245 20.9358 28.1954 22.1798 27.0864 23.4017C25.6901 24.9402 24.3257 26.4436 24.3257 28.8358ZM19.1319 12.1813C19.1319 9.13377 16.8712 6.58701 12.3354 6.58701H0.788574C1.79177 8.21835 2.28963 10.1101 2.21941 12.0239V29.4507C2.2885 31.3599 1.79062 33.2467 0.788574 34.8733H8.78699C7.78495 33.2467 7.28707 31.3599 7.35616 29.4507V26.3173C12.8935 22.6402 19.1319 18.0045 19.1319 12.1813ZM13.3084 12.8395C13.3084 18.1619 10.8331 21.8676 7.41336 25.0439V7.67439H8.8442C12.0207 7.67439 13.3657 9.54871 13.3657 12.8252L13.3084 12.8395ZM164.204 32.6845H163.274L163.217 32.2268H165.635V32.6845H164.762V34.8732H164.204V32.6845ZM168.382 32.2267L167.652 34.0005L166.923 32.2267H166.236V34.8731H166.78V33.1423L167.466 34.8588H167.838L168.525 33.1423V34.8731H169.069V32.2267H168.382Z" fill="currentColor"></path>
+      </svg>
+    </div>
+    <div class="nav_text">
+      <nav>
+        <ul class="nav_element">
+          <li class="nav_link active"><a href="#">PARTIES</a></li>
+          <li class="nav_link"><a href="#">HOW IT WORK</a></li>
+          <li class="nav_link"><a href="#">PRICING</a></li>
+          <li class="nav_link"><a href="#">BLOG</a></li>
+          <li  (click)="dropdown()" class="nav_link nav_link_dropdown"><a href="#">RESOURCES <i class="fas fa-angle-down"></i></a>
+            <ul class="dropdown">
+              <li class="li_dropdown">FAQS</li>
+              <li class="li_dropdown">ABOUT</li>
+              <li class="li_dropdown">CONTACT</li>
+            </ul>
+          </li>
+          <li class="nav_link"><a href="#">LOG IN</a></li>
+        </ul>
+      </nav>
+      <button>
+        <svg viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11.405 9.11268L16.3332 14.0376L16.1722 14.239L10.1121 10.7286L9.28593 17.5241L9.02334 17.525L8.00224 10.7354L2.0428 14.2847L1.87623 14.0846L6.66443 9.1282L0.0595703 6.75844L0.114424 6.50804L7.10507 7.11672L4.82815 0.612462L5.06313 0.50031L8.99295 6.21596L12.7584 0.474976L12.9966 0.585554L10.9061 7.10423L17.8786 6.44947L17.9407 6.69958L11.405 9.11268Z" fill="currentColor"></path>
+        </svg>GET STARTED</button>
+    </div>
+  </header>
+
+  <!---------------------------------- premiere section -------------------------------->
+  <section class="section1">
+    <div class="section1_div1">
+      <h1 class="h1_section1">
+        A party so perfect you won’t believe <em>you hosted</em> it.
+      </h1>
+      <div class="row1_section1_div1">
+        <p class="p_section1">
+          We provide hosts with tools to make elevating gatherings easier,
+          including party concepts, styled and shoppable decor,
+          customized guidelines, with timelines and checklists curated by the pros.
+        </p>
+      </div>
+      <div class="row2_section1_div1">
+        <p class="p2_section1">
+          We're all about DIY ease, not DIY squeeze.
+        </p>
+        <div class="div_btn">
+          <button class="btn_start_party">
+            <svg viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.405 9.11268L16.3332 14.0376L16.1722 14.239L10.1121 10.7286L9.28593 17.5241L9.02334 17.525L8.00224 10.7354L2.0428 14.2847L1.87623 14.0846L6.66443 9.1282L0.0595703 6.75844L0.114424 6.50804L7.10507 7.11672L4.82815 0.612462L5.06313 0.50031L8.99295 6.21596L12.7584 0.474976L12.9966 0.585554L10.9061 7.10423L17.8786 6.44947L17.9407 6.69958L11.405 9.11268Z" fill="currentColor"></path>
+            </svg>
+            START A PARTY
+          </button>
+          <button class="btn_how_it_work">HOW IT WORK</button>
+        </div>
+      </div>
+    </div>
+    <div class="section1_div2">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="assets/image/6398b5bd71bef3602bb58a94_FALLDINNER-7-p-800.webp" alt="image1">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/image/635957be293cde70e6a3217c_stack2-p-500.webp" alt="image2">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/image/6398b5b05334a6d3142c3505_ChampagnePink_2N1A1738_websize-p-800.webp" alt="image3">
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/image/6398b5c6ff73a95d9c5673ec_HOLIDAYPARTY-p-800.webp" alt="image4">
+          </div>
+        </div>
+        <div class="div_swiper_btn">
+          <button class="swiper_btn swiper-button-prev"></button>
+          <button class="swiper_btn swiper-button-next"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!------------------------------------ SECTION2 ----------------------------------->
+  <section class="section2">
+    <div class="section2_div1">
+      <div class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+          <div (change)="loop1()" class="swiper-slide">
+            <img src="assets/image/6398b47ccf63034f8ca174d4_Plan-Like-A-Pro-p-800.webp" alt="image5">
+          </div>
+          <div (change)="loop2()" class="swiper-slide">
+            <img src="assets/image/6398cdc9bb181e0f4657fe76_BRING-IT-TO-LIFE-p-800.webp" alt="image6">
+          </div>
+          <div (change)="loop3()" class="swiper-slide">
+            <img src="assets/image/6398cdbc5ad80679a3f7ab70_PICK-YOUR-PARTY.webp" alt="image7">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section2_div2">
+      <p class="p_section2_div2">
+        HOW IT WORKS
+      </p>
+      <div class="section2_div2_div1">
+        <div class="section2_div2_div1_div1">
+          <h2 class="h2_section_div2 h2_active">Pick your party</h2>
+          <div id="swiper1" class="texte_explication_section2_div2 texte-active">
+              <p>
+                Something for every host, our curated parties cover casual
+                to fancy, low-key to festive, and minimal to maximal occasions.
+              </p>
+          </div>
+          <div class="charge">
+            <div class="div_charge"></div>
+          </div>
+        </div>
+        <div class="section2_div2_div1_div1">
+          <h2 class="h2_section_div2">Bring it to life</h2>
+          <div id="swiper2" class="texte_explication_section2_div2">
+            <p>
+              We go way beyond the basics when it comes to throwing a party. Including a unique,
+              curated moment with links to purchase (think tablescape!),
+              food and beverage menus, conversation starters,
+              and entertainment – we've thought of everything so you don't have to.
+            </p>
+          </div>
+          <div class="charge">
+            <div class="div_charge"></div>
+          </div>
+        </div>
+        <div class="section2_div2_div1_div1">
+          <h2 class="h2_section_div2">Plan like a pro</h2>
+          <div id="swiper3" class="texte_explication_section2_div2">
+            <p>
+              Friendly reminders (we text you, just like your pals) and thorough checklists make sure the cake gets ordered,
+              the invites go out, the dishwasher is empty when your guests arrive, and of course, you have time to freshen up.
+            </p>
+          </div>
+          <div class="charge">
+              <div class="div_charge"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!------------------------------------ SECTION3 ----------------------------------->
+  <section class="section3">
+    <div class="section3_div1">
+      <div class="section3_div1_div2">
+          <div class="swiper mySwiper3">
+            <h2>Featured parties</h2>
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a class="a_swiper_slide" href="#">
+                  <div class="slide_img">
+                    <img src="assets/image/63ed7604fb92826b83040aec_qbNW60Y33F7Dx4QAMYtzEG8o0oEf-TnyTCq9XuehCMg.webp" alt="image1">
+                  </div>
+                  <div class="slide_div">
+                   <h3 class="slide_h3">Mardi Gras</h3>
+                   <div class="slide_p">
+                     <p>
+                       Let the good times roll with a Fat Tuesday
+                       celebration that makes you feel like you're
+                       down on Bourbon Street.
+                     </p>
+                   </div>
+                   <div class="div_button">
+                     <a class="section_slide_a" href="#">Winter</a>
+                     <a class="section_slide_a" href="#">Dinner</a>
+                     <a class="section_slide_a" href="#">Holiday</a>
+                     <a class="section_slide_a" href="#">Casual</a>
+                     <a class="section_slide_a" href="#">Buffet</a>
+                   </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="a_swiper_slide" href="#">
+                  <div class="slide_img">
+                    <img src="assets/image/63d48901599a725d89666c95_dZY516s9XhDW9-GOEVkyaa9WX5c836-r-xyc4cpswmY-p-800.webp" alt="image2">
+                  </div>
+                  <div class="slide_div">
+                    <h3 class="slide_h3">And The Awards Goes To...</h3>
+                    <div class="slide_p">
+                      <p>
+                        Feel like a winner with this glitz and glam filled awards show watch party.
+                      </p>
+                    </div>
+                    <div class="div_button">
+                      <a class="section_slide_a" href="#">Everyday</a>
+                      <a class="section_slide_a" href="#">Cocktail</a>
+                      <a class="section_slide_a" href="#">Winter</a>
+                      <a class="section_slide_a" href="#">Casual</a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="a_swiper_slide" href="#">
+                  <div class="slide_img">
+                    <img src="assets/image/63da8f8019182493608fdf51_0s1U4Ha74tn_7xw-Yq36axBXhzOPrG8ocX1OjHVoac0.webp" alt="image3">
+                  </div>
+                  <div class="slide_div">
+                    <h3 class="slide_h3">Soup-er Bowl Bash</h3>
+                    <div class="slide_p">
+                      <p>
+                        Invite your friends to join you in serving up some
+                        savory soups to fuel up for a big night of watching football!
+                      </p>
+                    </div>
+                    <div class="div_button">
+                      <a class="section_slide_a" href="#">Potluck</a>
+                      <a class="section_slide_a" href="#">Dinner</a>
+                      <a class="section_slide_a" href="#">Casual</a>
+                      <a class="section_slide_a" href="#">Buffet</a>
+                      <a class="section_slide_a" href="#">Winter</a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="a_swiper_slide" href="#">
+                  <div class="slide_img">
+                    <img src="assets/image/634dc06e880480dba5ff8109_2016_01_24_geraldineaspen_0507.webp" alt="image3">
+                  </div>
+                  <div class="slide_div">
+                    <h3 class="slide_h3">Après-Ski</h3>
+                    <div class="slide_p">
+                      <p>
+                        Throw on those argyle sweaters and ski bunny puffers
+                        to enjoy some cocktails that rival a black diamond.
+                        This is a late night cocktail party sure to impress.
+                      </p>
+                    </div>
+                    <div class="div_button">
+                      <a class="section_slide_a" href="#">Everyday</a>
+                      <a class="section_slide_a" href="#">Cocktail Party</a>
+                      <a class="section_slide_a" href="#">Late Night Party</a>
+                      <a class="section_slide_a" href="#">Date Night</a>
+                      <a class="section_slide_a" href="#">Casual</a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="a_swiper_slide" href="#">
+                  <div class="slide_img">
+                    <img src="assets/image/6377d5baccfcaa6d52929d6a_yIcU6PqstsD7qMndKFJ9O0O-UQRR7AlbRhSfO8kyoEE.jpeg" alt="image3">
+                  </div>
+                  <div class="slide_div">
+                    <h3 class="slide_h3">Taco Tuesday</h3>
+                    <div class="slide_p">
+                      <p>
+                        Tacos are best any night of the week.
+                        Plan a festive dinner party and relax, knowing that
+                        you can't go wrong when tacos and margs are involved.
+                        This fiesta is sure to satisfy.
+                      </p>
+                    </div>
+                    <div class="div_button">
+                      <a class="section_slide_a" href="#">Cocktail Party</a>
+                      <a class="section_slide_a" href="#">Dinner Party</a>
+                      <a class="section_slide_a" href="#">Everyday</a>
+                      <a class="section_slide_a" href="#">Kids</a>
+                      <a href="#" class="section_slide_a">Outdoor</a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="a_swiper_slide" href="#">
+                  <div class="slide_img">
+                    <img src="assets/image/63483f6d4bf58b530b02c76e_movie-night-main-p-800.webp" alt="image3">
+                  </div>
+                  <div class="slide_div">
+                    <h3 class="slide_h3">Movie Night</h3>
+                    <div class="slide_p">
+                      <p>
+                        Embrace the funny, nostalgic,
+                        and romantic moments that come with a solid movie night with your pals.
+                        Make this a cozy night in with yummy apps and classy drinks.
+                      </p>
+                    </div>
+                    <div class="div_button">
+                      <a class="section_slide_a" href="#">Every Day</a>
+                      <a class="section_slide_a" href="#">Kids</a>
+                      <a class="section_slide_a" href="#">Cocktail Party</a>
+                      <a class="section_slide_a" href="#">Dinner Party</a>
+                      <a class="section_slide_a" href="#">Outdoor</a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="div_btn">
+              <div class="swiper_btn swiper-button-prev"></div>
+              <div class="swiper_btn swiper-button-next"></div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="section3_div2">
+      <div class="section3_div2_div1">
+        <h3>TALK OF THE TOWN</h3>
+        <div class="div1_div2">
+          <p>
+            "I've never had such a beautifully themed party before.
+            Partytrick really helped me by providing the best tablescape
+            items that coordinate and tie everything together.
+            Make sure you plan your next party with @partytrick!"
+          </p>
+          <div class="reference">
+            <h4>Amy</h4>
+            <div class="paragraphe">Columbus, OH</div>
+          </div>
+        </div>
+        <div class="halalala">
+          <a href="#" class="block_halalala">
+             <div class="row_texte">
+               <div class="texte">
+                 <h3>PARTY TYPE</h3>
+               </div>
+                 <div class="swiper_btn">
+                   <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M2.5 12.165L3.83504 13.5L6.11026 11.1496L11.3 5.92222L11.8829 5.28291L11.9769 5.33932L11.7325 6.65556V12.0521H13.5V2.87607L13.1239 2.5H3.96667V4.28632H9.32564L10.6795 4.04188L10.7171 4.1359L10.0966 4.7L4.54957 10.1906L2.5 12.165Z" fill="currentColor"></path>
+                   </svg>
+                 </div>
+             </div>
+            <h4>Fa La La La Festivities</h4>
+          </a>
+        </div>
+      </div>
+      <div class="section3_div2_div2">
+        <div class="div_img">
+          <img src="assets/image/6393946d60bf717d9afebfe5_Stocksy_txp2d61f079cfa300_Medium_4302812%20(1)-p-800.webp" alt="image1">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!------------------------------------ SECTION4 ----------------------------------->
+  <section class="section4">
+    <div class="section4_div1">
+      <h2>Start the party</h2>
+      <p class="p_section4_div1">
+        For each party, our professional event planners have curated, styled, schemed,
+        and planned so we can hand over everything you need to know to throw incredible gatherings.
+      </p>
+    </div>
+    <div class="section4_div2">
+      <div class="section4_div2_div1">
+        <div class="section4_div2_div1_div1">
+          <div class="div_block">
+            <h3 class="texte_party_preview">
+              <svg viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.405 9.11268L16.3332 14.0376L16.1722 14.239L10.1121 10.7286L9.28593 17.5241L9.02334 17.525L8.00224 10.7354L2.0428 14.2847L1.87623 14.0846L6.66443 9.1282L0.0595703 6.75844L0.114424 6.50804L7.10507 7.11672L4.82815 0.612462L5.06313 0.50031L8.99295 6.21596L12.7584 0.474976L12.9966 0.585554L10.9061 7.10423L17.8786 6.44947L17.9407 6.69958L11.405 9.11268Z" fill="currentColor"></path>
+              </svg>
+              Party Preview
+            </h3>
+            <div class="souligne"></div>
+          </div>
+          <div class="div_block_row">
+            <div class="div_texte_free">
+              <h2>Free</h2>
+            </div>
+            <div class="liste">
+              <ul>
+                <li>Weekly party inspiration emails</li>
+                <li>Search and favorite parties to your dashboard</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="section4_div2_div1_div2">
+          <button class="start_preview">
+            <svg viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.405 9.11268L16.3332 14.0376L16.1722 14.239L10.1121 10.7286L9.28593 17.5241L9.02334 17.525L8.00224 10.7354L2.0428 14.2847L1.87623 14.0846L6.66443 9.1282L0.0595703 6.75844L0.114424 6.50804L7.10507 7.11672L4.82815 0.612462L5.06313 0.50031L8.99295 6.21596L12.7584 0.474976L12.9966 0.585554L10.9061 7.10423L17.8786 6.44947L17.9407 6.69958L11.405 9.11268Z" fill="currentColor"></path>
+            </svg>
+            START PREVIEW
+          </button>
+        </div>
+      </div>
+      <div class="section4_div2_div2">
+        <div class="section4_div2_div1_div1">
+          <div class="div_block">
+            <div class="row">
+              <h3 class="texte_party_preview">
+                <svg viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.405 9.11268L16.3332 14.0376L16.1722 14.239L10.1121 10.7286L9.28593 17.5241L9.02334 17.525L8.00224 10.7354L2.0428 14.2847L1.87623 14.0846L6.66443 9.1282L0.0595703 6.75844L0.114424 6.50804L7.10507 7.11672L4.82815 0.612462L5.06313 0.50031L8.99295 6.21596L12.7584 0.474976L12.9966 0.585554L10.9061 7.10423L17.8786 6.44947L17.9407 6.69958L11.405 9.11268Z" fill="currentColor"></path>
+                </svg>
+                Party Pro
+              </h3>
+              <div class="section4_block2">
+                <a class="bold" href="#">ANNUAL</a>
+                <a href="#">MONTHLY</a>
+              </div>
+            </div>
+            <div class="souligne"></div>
+          </div>
+          <div class="div_block_row">
+            <div class="div_texte_pro">
+               <div class="price">
+                 <h2>$89</h2>
+                 <div class="sub">/year</div>
+               </div>
+              <div class="souligne"></div>
+              <div class="save">
+                <p class="text-candy">Save 17% over monthly</p>
+              </div>
+            </div>
+            <div class="liste">
+              <ul>
+                <li>Unlimited, unique party plans</li>
+                <li>Details for each party including menu, entertainment, and tips</li>
+                <li>Custom timelines, reminders, and checklists</li>
+                <li>Tips and tricks from our pros</li></ul>
+            </div>
+          </div>
+        </div>
+        <div class="section4_div2_div2_div2">
+          <button class="become_a_pro">
+            <svg viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.405 9.11268L16.3332 14.0376L16.1722 14.239L10.1121 10.7286L9.28593 17.5241L9.02334 17.525L8.00224 10.7354L2.0428 14.2847L1.87623 14.0846L6.66443 9.1282L0.0595703 6.75844L0.114424 6.50804L7.10507 7.11672L4.82815 0.612462L5.06313 0.50031L8.99295 6.21596L12.7584 0.474976L12.9966 0.585554L10.9061 7.10423L17.8786 6.44947L17.9407 6.69958L11.405 9.11268Z" fill="currentColor"></path>
+            </svg>
+            BECOME A PRO
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="marge souligne"></div>
+  </section>
+  <!------------------------------------ SECTION5 ----------------------------------->
+  <section class="section5">
+    <div class="section5_div1">
+      <h2 class="h2_section5">
+        Parties are better with friends
+      </h2>
+      <p class="p_section5">Are you a Party Pro Member? Share the Partytrick magic! Refer 3 new Partytrick members with your unique code by March 31st, 2023 and be entered to win a set of six (6) wine glasses from<a target="_blank" href="https://estellecoloredglass.com/collections/stemware-wine/products/estelle-colored-wine-stemware-set-of-6-pastel-mixed-set">
+        Estelle Colored Glass</a>
+        + your friends will get 3 months of Partytrick FREE.*
+      </p>
+      <button class="learn_more">LEARN MORE</button>
+    </div>
+    <div class="section5_div2">
+        <div class="div_img">
+          <img src="assets/image/63c1ccb3fb4484848654d92e_Natural-Products-1_1024x1024@2x-p-800.webp" alt="image1">
+        </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="footer_row">
+    <h2 class="footer_h2">
+      Lean into the joy of getting people together—
+      <em>we'll do the&nbsp;rest.</em>
+    </h2>
+  </div>
+  <div class="footer_row2">
+    <div class="footer_row2_row1">
+      <div class="footer_row_div1">
+          <a href="/parties" >Parties</a>
+          <a href="/how-it-works">How it Works</a>
+          <a href="/pricing">Pricing</a>
+          <a href="/blog">Blog</a>
+          <a href="/login">Log in</a>
+          <a href="/signup">Sign up</a>
+          <a href="/log-out">Log out</a>
+          <a href="/dashboard">Dashboard</a></div>
+      <div class="footer_row_div2">
+       <div class="footer-subscribe_form">
+        <div class="paragraph">Subscribe for updates + offers</div>
+          <form action="#" method="post">
+            <div class="footer-subscribe">
+              <input id="email" type="email" class="footer-subscribe_input" maxlength="256" name="email" data-name="email" placeholder="Your email">
+              <input type="submit" value="Submit" class="footer-subscribe_btn">
+            </div>
+          </form>
+       </div>
+      </div>
+    </div>
+    <div class="footer_line souligne"></div>
+    <div class="footer_row2_row2">
+      <div class="footer_row_div1">
+        <a href="/parties" >About</a>
+        <a href="/how-it-works">Faqs</a>
+        <a href="/pricing">Careers</a>
+        <a href="/blog">Contact</a>
+        <a href="/login">Partnerships</a>
+        <a href="/signup">Affiliates</a>
+      </div>
+      <div class="footer_row_div2">
+        <a href="https://twitter.com/MbiamouRichy">
+          <svg viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.30373 8.65756V11.7284C7.93253 11.6265 7.54412 11.6126 7.16708 11.6877C6.79004 11.7628 6.43401 11.9251 6.12521 12.1625C5.81641 12.3999 5.56272 12.7064 5.38283 13.0595C5.20293 13.4125 5.10143 13.8031 5.0858 14.2024C5.06468 14.5462 5.11448 14.8907 5.23187 15.2128C5.34925 15.535 5.53151 15.8271 5.76637 16.0699C6.00124 16.3126 6.28328 16.5002 6.59355 16.6199C6.90381 16.7398 7.23512 16.7891 7.56521 16.7646C9.39728 16.7646 10.0446 15.4246 10.0446 14.1678V2.00391H12.9611C13.4572 5.216 14.9992 5.96137 17.0661 6.30587V9.3834C17.0661 9.3834 14.6141 9.20193 13.0437 7.96915V14.0488C13.0421 16.7998 11.4755 19.8706 7.5872 19.8706C3.97883 19.8706 2.13281 16.688 2.13281 14.0204C2.15583 13.23 2.33952 12.4536 2.67179 11.7426C3.00405 11.0315 3.47735 10.4018 4.06045 9.89507C4.64356 9.38832 5.32323 9.01601 6.05464 8.80271C6.78607 8.5894 7.5526 8.53993 8.30373 8.65756Z" fill="currentColor"></path>
+          </svg>
+        </a>
+        <a href="https://twitter.com/MbiamouRichy">
+          <svg viewBox="0 0 21 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path id="5348b1462f894082cba16811478a19a9" fill-rule="evenodd" clip-rule="evenodd" d="M20.094 3.85002C20.3955 4.64652 20.553 5.49139 20.5653 6.34302C20.628 7.41469 20.6283 7.76517 20.6306 10.4779L20.6306 10.5156C20.6306 13.264 20.616 13.6071 20.5676 14.6894C20.5507 15.532 20.3921 16.3623 20.0962 17.1498C19.5686 18.5088 18.4942 19.5843 17.1341 20.1119C16.3466 20.4078 15.5152 20.5664 14.6748 20.5833C13.6005 20.6463 13.2483 20.6463 10.5011 20.6463C7.75383 20.6463 7.41071 20.6316 6.32733 20.5833C5.48358 20.5563 4.65221 20.383 3.86921 20.077C2.50796 19.5505 1.43358 18.475 0.905957 17.116C0.610082 16.3274 0.451457 15.4971 0.434582 14.6556C0.371582 13.5801 0.371582 13.2291 0.371582 10.4819C0.371582 7.73464 0.386207 7.39152 0.434582 6.30814C0.450332 5.46777 0.610082 4.63639 0.905957 3.85002C1.43246 2.48989 2.50796 1.41439 3.86808 0.887891C4.65446 0.592016 5.48583 0.433391 6.32621 0.415391C7.40058 0.353516 7.75271 0.353516 10.5 0.353516C13.2472 0.353516 13.5903 0.367016 14.6726 0.415391C15.5141 0.433391 16.3455 0.592016 17.1318 0.887891C18.492 1.41439 19.5663 2.48989 20.094 3.85002ZM5.29233 10.4763C5.29233 13.3495 7.61996 15.6771 10.4932 15.6771C13.3642 15.6771 15.6941 13.3495 15.6941 10.4763C15.6941 7.60302 13.3642 5.27539 10.4932 5.27539C7.61996 5.27539 5.29233 7.60302 5.29233 10.4763ZM14.6883 5.08302C14.6883 5.75352 15.2295 6.29577 15.9011 6.29577C16.5705 6.29577 17.1127 5.75352 17.1127 5.08302C17.1127 4.41252 16.5705 3.87027 15.9011 3.87027C15.2295 3.87027 14.6883 4.41252 14.6883 5.08302ZM13.8717 10.4765C13.8717 12.3423 12.3592 13.8549 10.4934 13.8549C8.62754 13.8549 7.11499 12.3423 7.11499 10.4765C7.11499 8.61069 8.62754 7.09814 10.4934 7.09814C12.3592 7.09814 13.8717 8.61069 13.8717 10.4765Z" fill="currentColor"></path>
+          </svg>
+        </a>
+        <a href="https://twitter.com/MbiamouRichy">
+          <svg viewBox="0 0 23 22" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path id="6ca880ccc039bae625f16b8b142f6025" d="M11.2512 0.168945C5.26903 0.168945 0.418945 5.01903 0.418945 11.0012C0.418945 16.407 4.37961 20.8877 9.55903 21.7034V14.1331H6.80736V11.0012H9.55903V8.61461C9.55903 5.89761 11.1764 4.39936 13.6497 4.39936C14.8349 4.39936 16.0764 4.61061 16.0764 4.61061V7.27453H14.707C13.3637 7.27453 12.9434 8.11086 12.9434 8.96778V10.999H15.9453L15.4654 14.1309H12.9434V21.7013C18.1228 20.8899 22.0834 16.4081 22.0834 11.0012C22.0834 5.01903 17.2334 0.168945 11.2512 0.168945Z" fill="currentColor"></path>
+          </svg>
+        </a>
+        <a href="https://twitter.com/MbiamouRichy">
+          <svg viewBox="0 0 21 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path id="0a764ea9746000bd3116872810f91c05" d="M19.1667 0.25H1.83333C1.23425 0.25 0.75 0.735333 0.75 1.33333V18.6667C0.75 19.2647 1.23425 19.75 1.83333 19.75H19.1667C19.7658 19.75 20.25 19.2647 20.25 18.6667V1.33333C20.25 0.735333 19.7658 0.25 19.1667 0.25ZM6.53392 16.8651H3.63925V7.55925H6.53392V16.8651ZM5.08658 6.2885C4.15925 6.2885 3.40958 5.53667 3.40958 4.6115C3.40958 3.68633 4.15817 2.9345 5.08658 2.9345C6.01175 2.9345 6.76358 3.68525 6.76358 4.6115C6.76358 5.53775 6.01175 6.2885 5.08658 6.2885ZM17.3662 16.8651H14.4748V12.34C14.4748 11.261 14.4553 9.87325 12.9711 9.87325C11.4653 9.87325 11.2367 11.0498 11.2367 12.2642V16.8662H8.34742V7.56033H11.1208V8.83217H11.1608C11.5454 8.10092 12.4901 7.32958 13.8952 7.32958C16.8245 7.32958 17.3651 9.25575 17.3651 11.7626V16.8651H17.3662Z" fill="currentColor"></path>
+          </svg>
+        </a>
+        <a href="https://twitter.com/MbiamouRichy">
+          <svg viewBox="0 0 21 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path id="5623533f3db320c05db6aeefc6694e0e" d="M10.4332 0C4.66276 0 0 4.69929 0 10.4957C0 14.9445 2.74784 18.7454 6.62918 20.2744C6.5347 19.4451 6.45742 18.1666 6.6635 17.2596C6.85242 16.4389 7.88285 12.0419 7.88285 12.0419C7.88285 12.0419 7.57373 11.4114 7.57373 10.4871C7.57373 9.02714 8.41525 7.93871 9.46288 7.93871C10.3559 7.93871 10.7853 8.61252 10.7853 9.41589C10.7853 10.3143 10.2185 11.6619 9.918 12.9145C9.66896 13.9597 10.4418 14.8149 11.4637 14.8149C13.3185 14.8149 14.7439 12.8453 14.7439 10.0119C14.7439 7.49817 12.9492 5.74454 10.3817 5.74454C7.41058 5.74454 5.66743 7.98188 5.66743 10.297C5.66743 11.1954 6.01091 12.1629 6.44026 12.6898C6.52614 12.7935 6.5347 12.8885 6.50894 12.9922C6.43166 13.3205 6.25134 14.0374 6.21698 14.1843C6.17407 14.3743 6.06243 14.4175 5.86491 14.3225C4.57688 13.7005 3.76969 11.7828 3.76969 10.2452C3.76969 6.93667 6.15686 3.89593 10.6651 3.89593C14.2802 3.89593 17.0967 6.48744 17.0967 9.96009C17.0967 13.5796 14.8298 16.4908 11.6869 16.4908C10.6307 16.4908 9.6346 15.9379 9.29972 15.2814C9.29972 15.2814 8.77593 17.2855 8.64713 17.7779C8.41525 18.6936 7.77981 19.8338 7.35046 20.5335C8.32941 20.8359 9.35984 21 10.4418 21C16.2037 21 20.875 16.3007 20.875 10.5043C20.8664 4.69929 16.1951 0 10.4332 0Z" fill="currentColor"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer_row2_row3">
+      <div class="footer_row_div1">
+        <p>
+          <em>
+          This website contains affiliate links. If you choose to purchase after clicking a link,
+          Partytrick may receive a commission at no extra cost to you
+          </em>
+        </p>
+      </div>
+      <div class="footer_row_div2">
+        © Partytrick <span>{{date}}</span>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-logo_wrapper">
+    <div class="footer-logo">
+      <svg viewBox="0 0 1324 339" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M1008.38 75.1179L981.125 47.8784L1017.27 34.5317L1016.93 33.1484L978.365 36.7698L989.927 0.715365L988.61 0.10376L967.784 31.8568L946.048 0.243885L944.748 0.864187L957.342 36.8389L918.677 33.4723L918.374 34.8572L954.905 47.9643L928.422 75.3777L929.343 76.4846L962.304 56.8538L967.952 94.4063L969.404 94.4015L973.974 56.8162L1007.49 76.2318L1008.38 75.1179ZM1261.37 169.988C1314.82 144.144 1311.31 93.1582 1274.24 93.1582C1246.99 93.1582 1221.61 123.563 1213.54 151.628H1209.21L1214.01 31.8819L1212.84 32.5835V31.8819L1158.81 51.1769C1167.16 64.4042 1171.24 79.8747 1170.51 95.497V234.772C1171.05 250.411 1166.98 265.865 1158.81 279.209H1224.18C1216.01 265.865 1211.94 250.411 1212.49 234.772V171.391C1221.49 139.934 1238.1 126.72 1254.82 126.72C1276.58 126.72 1278.91 166.83 1221.61 178.056L1252.48 245.647C1257.8 256.035 1260.83 267.438 1261.37 279.092H1323.94C1313.02 265.143 1303.39 250.23 1295.17 234.538L1261.37 169.988ZM655.24 144.144C652.684 152.801 647.047 171.514 640.789 192.292C638.17 200.985 635.443 210.038 632.787 218.868C625.77 195.48 612.789 152.329 607.292 134.204C604.734 127.846 603.75 120.964 604.422 114.143C605.094 107.323 607.402 100.766 611.152 95.0291H501.457V53.2817H499.586C486.255 75.2663 458.655 88.3635 437.137 95.0291V103.449H458.538V237.695C458.538 255.587 468.245 281.431 497.364 281.431C507.847 282.06 518.226 279.054 526.748 272.918C535.271 266.782 541.415 257.893 544.142 247.752C537.305 251.271 529.729 253.115 522.04 253.131C519.216 253.435 516.361 253.097 513.687 252.141C511.013 251.186 508.59 249.637 506.599 247.613C504.608 245.588 503.101 243.14 502.19 240.45C501.28 237.761 500.989 234.9 501.34 232.082V103.449H527.068C552.566 103.449 556.89 116.566 562.754 134.355L562.758 134.367C563.133 135.503 563.513 136.657 563.906 137.829C570.455 157.358 592.324 221.09 613.257 282.015C611.795 286.968 608.671 291.266 604.411 294.184C600.151 297.102 595.014 298.463 589.868 298.036C577.67 298.1 565.821 293.972 556.305 286.342L545.429 334.054C553.48 337.029 561.989 338.573 570.572 338.614C591.622 338.614 609.164 326.102 621.443 287.278C630.482 258.429 639.783 227.351 647.664 201.02L647.673 200.991L647.678 200.972L647.687 200.942L647.688 200.937L647.69 200.932C654.684 177.564 660.556 157.943 664.128 146.95C669.752 129.061 676.993 111.721 685.763 95.146H652.784C662.959 104.384 662.257 121.107 655.24 144.144ZM757.913 103.45V232.083C757.562 234.901 757.853 237.761 758.763 240.451C759.674 243.14 761.181 245.589 763.172 247.614C765.163 249.638 767.586 251.186 770.26 252.142C772.934 253.098 775.789 253.436 778.613 253.132C786.301 253.102 793.874 251.259 800.716 247.753C797.988 257.894 791.844 266.783 783.322 272.918C774.799 279.054 764.42 282.061 753.937 281.432C724.818 281.432 715.112 255.588 715.112 237.696V103.45H693.593V95.0298C715.111 88.3643 742.594 75.2671 756.042 53.2824H757.913V95.0298H798.026L795.453 103.45H757.913ZM1076.83 102.166C1034.26 102.166 1042.68 238.05 1104.42 238.05C1113.13 237.676 1121.6 235.071 1129.02 230.484C1136.43 225.897 1142.54 219.482 1146.76 211.855C1143.6 256.175 1122.9 281.2 1089.34 281.2C1048.99 281.2 1016.95 247.639 1016.95 186.713C1016.95 130.582 1044.43 93.1614 1092.73 93.1614C1110.59 94.0516 1127.87 99.8367 1142.67 109.884V178.644H1141.03C1125.24 148.942 1098.34 102.166 1076.83 102.166ZM938.84 114.325L992.986 95.0301L992.518 234.773C991.972 250.412 996.039 265.866 1004.21 279.21H938.84C947.014 265.866 951.081 250.412 950.535 234.773V158.762C951.081 143.123 947.014 127.669 938.84 114.325ZM363.582 140.17H360.424L362.88 95.0314L308.734 114.326C316.908 127.671 320.975 143.125 320.429 158.763V234.774C320.975 250.413 316.908 265.867 308.734 279.211H374.107C365.933 265.867 361.866 250.413 362.412 234.774V160.868C362.412 131.399 401.589 133.037 419.013 153.735H420.183V94.4467C391.297 87.3133 369.078 117.835 363.582 140.17ZM862.7 140.171H865.858C871.354 117.836 893.69 87.3143 922.693 94.4477V153.736H921.407C904.099 133.038 864.805 131.4 864.805 160.869V234.775C864.259 250.414 868.326 265.868 876.499 279.212H811.127C819.301 265.868 823.368 250.414 822.822 234.775V158.764C823.368 143.126 819.301 127.672 811.127 114.327L865.156 95.0324L862.7 140.171ZM224.65 93.0419C256.81 93.0419 280.199 107.075 280.199 143.443V237.696C280.13 252.283 284.184 266.592 291.894 278.976H237.631V247.987C234.539 257.523 228.623 265.894 220.666 271.992C212.709 278.09 203.087 281.627 193.075 282.133C186.944 282.639 180.776 281.831 174.982 279.764C169.187 277.697 163.9 274.418 159.473 270.147C155.047 265.875 151.581 260.708 149.309 254.992C147.037 249.275 146.01 243.14 146.297 236.995C146.297 205.29 170.809 191.283 194.37 177.818C216.174 165.359 237.164 153.364 237.164 128.241V111.051C237.164 105.437 234.357 101.111 228.276 101.111C219.117 101.111 203.166 116.777 170.939 148.428C166.544 152.745 161.847 157.358 156.822 162.27H155.536L175.183 100.175C191.295 95.6722 207.922 93.2745 224.65 93.0419ZM192.374 229.744C192.374 244.946 199.157 255.12 212.371 255.12H212.956C226.872 255.12 235.643 236.761 237.164 222.026V151.044C233.229 165.176 224.001 175.344 214.937 185.331C203.525 197.905 192.374 210.192 192.374 229.744ZM149.924 93.6239C149.924 68.7157 131.446 47.9005 94.3748 47.9005H0C8.1993 61.2338 12.2684 76.6958 11.6945 92.3377V234.77C12.2592 250.374 8.18991 265.796 0 279.09H65.3727C57.1828 265.796 53.1135 250.374 53.6781 234.77V209.16C98.9359 179.107 149.924 141.218 149.924 93.6239ZM102.327 99.0032C102.327 142.505 82.0956 172.792 54.1457 198.753V56.788H65.8402C91.802 56.788 102.795 72.1071 102.795 98.8863L102.327 99.0032Z" fill="currentColor"></path>
+      </svg>
+    </div>
+  </div>
+</footer>
 <section class="poppup">
   <div class="poppup_row">
-    <div class="swiper_btn">
+    <div (click)="close()" class="swiper_btn poppup_close_btn">
       <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24">
         <path fill="CurrentColor" d="M14.5,12l9-9c0.7-0.7,0.7-1.8,0-2.5c-0.7-0.7-1.8-0.7-2.5,0l-9,9l-9-9c-0.7-0.7-1.8-0.7-2.5,0 c-0.7,0.7-0.7,1.8,0,2.5l9,9l-9,9c-0.7,0.7-0.7,1.8,0,2.5c0.7,0.7,1.8,0.7,2.5,0l9-9l9,9c0.7,0.7,1.8,0.7,2.5,0 c0.7-0.7,0.7-1.8,0-2.5L14.5,12z"></path>
       </svg>

@@ -75,6 +75,10 @@ export class AppComponent {
       centeredSlides: false,
       slidesPerView: 3,
     });
+    /*----------------------------- poppup --------------------*/
+    let poppup = document.querySelector('.poppup');
+    // @ts-ignore
+    poppup.classList.add('poppup_active');
   }
   dropdown(){
     // @ts-ignore
@@ -114,5 +118,10 @@ export class AppComponent {
   }
   // recuperation de la date
   date =  new Date().getFullYear();
-
+  // close poppup
+  close(){
+    let poppup = document.querySelector('.poppup');
+    // @ts-ignore
+    poppup.classList.remove('poppup_active');
+  }
 }
