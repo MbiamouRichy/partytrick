@@ -6,6 +6,7 @@ $btn-bg1: #f54d40;
 $btn-bg2: #ffd8d7;
 $section3_color: #790808;
 $swiper-slide-white: #fff;
+$poppup-bg-color: rgba(0,0,0,.5);
 /*=================== Placeholder ===============*/
 %div-row{
   display: flex;
@@ -936,4 +937,117 @@ footer {
 }
  .footer-logo{
   width: 100%;
+}
+
+ /*======================================= POPPUP ========================================*/
+/*========================================================================================*/
+.poppup{
+  @extend %div-row;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-color: $poppup-bg-color;
+}
+.poppup .poppup_row{
+  @extend %div-row;
+  z-index: 999;
+  max-width: 60rem;
+  border-radius: 0.5rem;
+  background: $main-color;
+
+  .poppup_col1, .poppup_col2{
+    @extend %div-col;
+    align-items: flex-start;
+    height: 434px;
+  }
+}
+.poppup_row .poppup_col1{
+  .poppup_img{
+    @extend %clip-right;
+    width: 100%;
+    height: 100%;
+    img{
+      object-fit: cover;
+      height: 434px;
+      width: 411px;
+    }
+  }
+}
+.poppup_row .poppup_col2 .width{
+  padding: 3rem;
+  @extend %div-col;
+  align-items: flex-start;
+  gap: 2rem;
+
+  .h3{
+    font-family: Ivypresto,Georgia,sans-serif;
+    font-size: 3rem;
+    line-height: 1.1;
+    font-weight: 400;
+  }
+  p{
+    font-size: 1.25rem;
+  }
+}
+.poppup_row .poppup_col2{
+
+  .div_form{
+    width: 100%;
+    height: 100%;
+
+    .input-group{
+      display: block;
+      margin-bottom: 1.5rem;
+      label{
+        color: $text-header-color-a;
+        font-family: Arial;
+        letter-spacing: 1.1px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+.poppup_row .poppup_col2 .form_poppup{
+  position: relative;
+  width: 100%;
+
+  .input_poppup{
+    width: 100%;
+    height: 100%;
+    min-height: 60px;
+    padding: 1rem 1.2rem;
+    border: 1px solid $text-header-color-a;
+    border-radius: 7px;
+    background: transparent;
+    color: $text-header-color-a;
+    font-size: 1rem;
+  }
+
+  .input_btn{
+    margin-top: 2rem;
+    font-family: Arial;
+    width: 100%;
+    min-height: 60px;
+    justify-content: center;
+    background: $btn-bg1;
+    text-transform: uppercase;
+    color: $swiper-slide-white;
+    font-weight: 600;
+    border-radius: 7px;
+    margin-left: 0;
+  }
+  .input_btn:hover{
+    background: $btn-bg2;
+    color: $btn-bg1;
+  }
+}
+
+/*----------------- btn to close poppup -----------------*/
+.poppup_row {
+  position: relative;
+  .swiper_btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
 }
