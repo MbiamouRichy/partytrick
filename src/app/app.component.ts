@@ -112,4 +112,7 @@ export class AppComponent {
     // @ts-ignore
     swiper.className += ' texte-active';
   }
+  // recuperation de la date
+  date =  new Date().getFullYear();
+
 }

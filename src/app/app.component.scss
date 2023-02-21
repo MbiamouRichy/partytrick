@@ -758,6 +758,7 @@ nav .nav_element .nav_link_dropdown .dropdown{
   @extend %div-row;
   justify-content: space-between;
   padding: 0 20px;
+  margin-bottom: 5rem;
 }
 .section5_div1, .section5_div2{
   max-width: 50%;
@@ -800,4 +801,139 @@ nav .nav_element .nav_link_dropdown .dropdown{
       height: 420px;
     }
   }
+}
+
+/*===================================== footer ====================================*/
+/*================================================================================*/
+footer {
+  @extend %div-col;
+  padding: 0 40px;
+  padding-top: 6rem;
+  background-color: $text-header-color-a;
+  color: $swiper-slide-white;
+
+  .footer_row {
+    @extend %div-row;
+    align-items: flex-start;
+    width: 100%;
+
+    .footer_h2 {
+      font-family: Ivypresto, Georgia, sans-serif;
+      font-size: 3rem;
+      line-height: 1.1;
+      font-weight: 400;
+      width: 740px;
+    }
+  }
+.footer_row2{
+  width: 100%;
+  .footer_row2_row1{
+    @extend %div-row;
+    width: 100%;
+    }
+  }
+}
+
+.footer_row2_row1 .footer_row_div1, .footer_row2_row2 .footer_row_div1, .footer_row2_row3 .footer_row_div1{
+  @extend %div-row;
+  align-items: flex-end;
+  width: 70%;
+  height: 40px;
+  a {
+    display: inline-block;
+    margin-right: 2rem;
+    color: $swiper-slide-white;
+    font-size: .9rem;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}
+
+.footer-subscribe_form {
+  @extend %div-col;
+  align-items: flex-start;
+
+  .paragraph{
+    font-family: 'Gt Alpina Typewriter',Arial,sans-serif;
+    font-size: .875rem;
+    line-height: 1.4;
+    color: $swiper-slide-white;
+  }
+}
+.footer_row2_row1 .footer_row_div2, .footer_row2_row2 .footer_row_div2, .footer_row2_row3 .footer_row_div2{
+  @extend %div-row;
+  justify-content: flex-end;
+  width: 30%;
+}
+  form .footer-subscribe{
+  width: 100%;
+  display: block;
+  height: 40px;
+  .footer-subscribe_input{
+    height: 100%;
+    padding: 12px 24px;
+    flex: 1;
+    border-radius: 5px 0 0 5px;
+    background-color: transparent;
+    font-size: 1rem;
+    line-height: 1.2;
+    border: 1px solid $swiper-slide-white;
+  }
+    .footer-subscribe_input::placeholder{
+      color: $swiper-slide-white;
+    }
+  .footer-subscribe_btn{
+    width: 46px;
+    height: 100%;
+    flex: 0 0 auto;
+    border-radius:  0 5px 5px 0;
+    background-color: $swiper-slide-white;
+    background-image: url(../assets/border.svg);
+    background-position: 50% 45%;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    color: transparent;
+    border: 1px solid $swiper-slide-white;
+
+  }
+}
+  /*--------------------- div souligne  --------------------------*/
+.footer_line{
+  border-bottom-color: $swiper-slide-white;
+}
+/*--------------------- row2 for links and socials medial icons --------------------------*/
+.footer_row2_row2, .footer_row2_row3{
+  @extend %div-row;
+  margin-bottom: 2rem;
+  .footer_row_div1{
+    align-items: center;
+  }
+}
+.footer_row2_row2 .footer_row_div2 svg{
+  width: 24px;
+  height: 24px;
+  color: $swiper-slide-white;
+  margin: 0 8px;
+}
+.footer_row2_row3 .footer_row_div1{
+  p{
+    width: 657px;
+  }
+}
+.footer_row2_row3 .footer_row_div2 a{
+  text-decoration: none;
+  color: $swiper-slide-white;
+  margin: 0 8px;
+}
+/*------------------------------ logo in bottom ---------------------*/
+.footer-logo_wrapper{
+  height: 14vw;
+  max-height: 200px;
+  overflow: hidden;
+  width: 100%;
+
+}
+ .footer-logo{
+  width: 100%;
 }
