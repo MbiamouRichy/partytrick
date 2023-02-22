@@ -78,7 +78,28 @@ export class AppComponent {
     /*----------------------------- poppup --------------------*/
     let poppup = document.querySelector('.poppup');
     // @ts-ignore
-    poppup.classList.add('poppup_active');
+   // poppup.classList.add('poppup_active');
+     // Affichage de la navbar an mobile
+    let btn_hamburger = document.querySelector('.btn_menu_hamburger');
+    // @ts-ignore
+    btn_hamburger.addEventListener('click', () =>{
+      let navbar_mobile = document.querySelector('header nav');
+      // @ts-ignore
+      if ( navbar_mobile.style.display=='flex'){
+        // @ts-ignore
+        btn_hamburger.classList.remove('active')
+        // @ts-ignore
+        navbar_mobile.style.display="none";
+      }else{
+        // @ts-ignore
+        navbar_mobile.style.display='flex'
+        // @ts-ignore
+        btn_hamburger.classList.add('active')
+      }
+    })
+    let nav_link = document.querySelector('.nav_link_dropdown');
+    // @ts-ignore
+    nav_link.addEventListener('click', this.dropdown);
   }
   dropdown(){
     // @ts-ignore
