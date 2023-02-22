@@ -558,7 +558,7 @@ nav .nav_element .nav_link_dropdown .dropdown{
       line-height: 1.4;
       font-weight: 300;
       letter-spacing: -0.02em;
-      color: $swiper_slide-white;
+      color: $main-color;
       margin-bottom: 1rem;
     }
   }
@@ -571,14 +571,14 @@ nav .nav_element .nav_link_dropdown .dropdown{
     font-weight: 500;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: $swiper_slide-white;
+    color: $main-color;
 
   }
   .paragraphe{
     font-family: "Gt Alpina Typewriter", Arial, sans-serif;
     font-size: 0.875rem;
     line-height: 1.4;
-    color: $swiper_slide-white;
+    color: $main-color;
   }
 }
 /*--------- block with the big image ----------*/
@@ -602,7 +602,7 @@ nav .nav_element .nav_link_dropdown .dropdown{
   align-items: flex-start;
   width: 450px;
   height: 126px;
-  border: 1px dotted $swiper-slide-white;
+  border: 1px dotted $main-color;
   text-decoration: none;
   border-radius: 7px;
   padding: 24px;
@@ -621,7 +621,7 @@ nav .nav_element .nav_link_dropdown .dropdown{
     font-size: 2rem;
     line-height: 1.2;
     font-weight: 400;
-    color: $swiper-slide-white;
+    color: $main-color;
   }
 }
 
@@ -859,7 +859,7 @@ footer {
   padding: 0 40px;
   padding-top: 6rem;
   background-color: $text-header-color-a;
-  color: $swiper-slide-white;
+  color: $main-color;
 
   .footer_row {
     @extend %div-row;
@@ -891,7 +891,7 @@ footer {
   a {
     display: inline-block;
     margin-right: 2rem;
-    color: $swiper-slide-white;
+    color: $main-color;
     font-size: .9rem;
     font-weight: 500;
     text-decoration: none;
@@ -907,7 +907,7 @@ footer {
     font-family: 'Gt Alpina Typewriter',Arial,sans-serif;
     font-size: .875rem;
     line-height: 1.4;
-    color: $swiper-slide-white;
+    color: $main-color;
   }
 }
 .footer_row2_row1 .footer_row_div2, .footer_row2_row2 .footer_row_div2, .footer_row2_row3 .footer_row_div2{
@@ -917,7 +917,7 @@ footer {
 }
   form .footer-subscribe{
   width: 100%;
-  display: block;
+  display: flex;
   height: 60px;
   .footer-subscribe_input{
     height: 100%;
@@ -927,29 +927,29 @@ footer {
     background-color: transparent;
     font-size: 1rem;
     line-height: 1.2;
-    border: 1px solid $swiper-slide-white;
+    border: 1px solid $main-color;
   }
     .footer-subscribe_input::placeholder{
-      color: $swiper-slide-white;
+      color: $main-color;
     }
   .footer-subscribe_btn{
     width: 46px;
     height: 100%;
     flex: 0 0 auto;
     border-radius:  0 5px 5px 0;
-    background-color: $swiper-slide-white;
+    background-color: $main-color;
     background-image: url(../assets/border.svg);
     background-position: 50% 45%;
     background-size: 20px;
     background-repeat: no-repeat;
     color: transparent;
-    border: 1px solid $swiper-slide-white;
+    border: 1px solid $main-color;
 
   }
 }
   /*--------------------- div souligne  --------------------------*/
 .footer_line{
-  border-bottom-color: $swiper-slide-white;
+  border-bottom-color: $main-color;
 }
 /*--------------------- row2 for links and socials medial icons --------------------------*/
 .footer_row2_row2, .footer_row2_row3{
@@ -962,7 +962,7 @@ footer {
 .footer_row2_row2 .footer_row_div2 svg{
   width: 24px;
   height: 24px;
-  color: $swiper-slide-white;
+  color: $main-color;
   margin: 0 8px;
 }
 
@@ -973,7 +973,7 @@ footer {
 }
 .footer_row2_row3 .footer_row_div2 a{
   text-decoration: none;
-  color: $swiper-slide-white;
+  color: $main-color;
   margin: 0 8px;
 }
 /*------------------------------ logo in bottom ---------------------*/
@@ -1091,7 +1091,7 @@ footer {
     justify-content: center;
     background: $btn-bg1;
     text-transform: uppercase;
-    color: $swiper-slide-white;
+    color: $main-color;
     font-weight: 600;
     border-radius: 7px;
     margin-left: 0;
@@ -1175,7 +1175,7 @@ footer {
     width: 40%;
   }
 }
-/*-------------- 768px -----------------*/
+/*-------------- < 1024px -----------------*/
 @media only screen and (max-width: 1023px) {
   header{
     .btn_menu_hamburger{
@@ -1238,7 +1238,9 @@ footer {
     width: 680px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+/*------------ < 991px -----------------*/
+
+@media only screen  and (max-width: 991px) {
   .section1 {
     flex-direction: column;
     justify-content: center;
@@ -1377,6 +1379,65 @@ footer {
         font-size: 1rem;
       }
     }
+  }
+}
+/*----------------- between 768px and 978px --------------------*/
+@media only screen and (min-width: 768px) and  (max-width: 991px) {
+
+  .section1 .section1_div1 .row1_section1_div1 .p_section1{
+    width: auto;
+    height: 92px;
+  }
+  .section2 .section2_div2_div1_div1 .h2_section_div2, .section3_div1_div2 h2{
+    font-size: 2.6rem;
+  }
+  .section3 .section3_div1 {
+    .swiper-slide{
+      width: 43%!important;
+      .a_swiper_slide{
+        height: 600px!important;
+      }
+    }
+    .swiper_btn{
+      top: 20px;
+    }
+    .swiper-button-prev {
+      left: 450px;
+    }
+  }
+  .section3{
+    .section3_div1, .section3_div2{
+      margin-top: 0;
+    }
+  }
+  .section3_div2_div1 {
+    height: 673px;
+    .halalala .block_halalala {
+      width: 250px;
+    }
+    .div1_div2 p {
+      width: 270px;
+    }
+  }
+  .section3 .section3_div2_div2 .div_img {
+      width: 307px;
+      height: 673px;
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .section5_div1{
+    margin-right: 30px;
+    .p_section5 {
+      width: 300px;
+      height: 280px;
+    }
+  }
+
+  .section5_div2 .div_img img {
+    width: 325px;
   }
 }
 /*------------- animations ---------------*/
