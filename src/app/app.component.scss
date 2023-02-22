@@ -1551,19 +1551,24 @@ footer {
       max-width: 100%;
 
       .section2_div2_div1_div1 {
-        width: auto;
+        width: 100%;
         padding-top: 20px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
 
         .div_img {
           margin-top: 20px;
-          display: block;
-          width: 275px;
-          height: 220px;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
 
           img {
             object-fit: cover;
             width: 100%;
-            height: 100%;
           }
         }
       }
@@ -1620,8 +1625,12 @@ footer {
 
     .div_img {
       clip-path: none;
-      width: 275px;
-      height: 220px;
+      margin-top: 20px;
+      width: 100%;
+      height: 100%;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
 
       img {
         width: 100%;
@@ -1682,13 +1691,21 @@ footer {
     width: auto;
     height: auto;
   }
-  .section5_div2 .div_img {
-    margin-top: 20px;
+  .section5_div2{
+    .div_img {
+      margin-top: 20px;
+      width: 100%;
+      height: 100%;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
 
-    img {
-      width: 275px;
+      img {
+        width: 100%;
+      }
     }
   }
+
   footer {
     padding: 0 20px;
     padding-top: 3rem;
