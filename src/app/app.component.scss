@@ -2,6 +2,7 @@
 $main-color: #fff8ec;
 $text-header-color-a: #17372e;
 $btn-color: #fff;
+$btn-bg1-a: rgba(245, 77, 64, 0.8);
 $btn-bg1: #f54d40;
 $btn-bg2: #ffd8d7;
 $section3_color: #790808;
@@ -48,8 +49,9 @@ $poppup-bg-color: rgba(0,0,0,.5);
 /*========================== Main et Bouton et btn-swiper ================================*/
 main{
   background: $main-color;
-  width: 100vw;
+  width: 100%;
   padding: 100px 60px 20px 60px;
+  overflow: hidden;
 }
 button{
   @extend %div-row;
@@ -146,6 +148,44 @@ nav .nav_element .nav_link_dropdown .dropdown{
   background-color: $btn-bg2;
   padding: 0 16px;
   border-radius: 7px;
+}
+/*--- btn hamburger ---------*/
+
+  .bar{
+    position: relative;
+    z-index: 60;
+    width: 28px;
+    height: 3px;
+    padding: 0;
+    background-color: $btn-bg1;
+    transition: all 0.5s ease;
+    margin: 20px;
+  }
+  .bar::before, .bar::after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    z-index: 70;
+    width: 28px;
+    height: 3px;
+    background-color: $btn-bg1;
+    transition: all 0.2s ease;
+  }
+  .bar::after{
+    top: -10px;
+  }
+  .bar:hover{
+    height: 3px;
+    background: transparent;
+  }
+  .bar:hover::before{
+    top: 5px;
+    transform: rotate(-45deg);
+  }
+  .bar:hover::after{
+    top: 5px;
+    transform: rotate(45deg);
 }
 
 /*================================= section1 =========================================*/
@@ -1079,4 +1119,128 @@ footer {
     opacity: 1;
   }
 
+}
+
+/*======================================== responsive ====================================*/
+/*=======================================================================================*/
+
+/*-------------- 1200px ----------*/
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+  header .nav_link{
+    font-size: 0.9rem;
+  }
+  .section3_div1 .swiper-button-prev{
+    left: 670px;
+  }
+  .section3_div1 .swiper-slide .a_swiper_slide{
+    width: 260px;
+    height: 587px;
+  }
+  .section3_div2_div2 .div_img img{
+    width: 422px;
+    height: 601px;
+  }
+  .halalala .block_halalala{
+    width: 343px;
+    h4{
+      font-size: 1.8rem;
+    }
+  }
+  .section4_div2 {
+    .section4_div2_div1, .section4_div2_div2 {
+      width: 440px;
+      height: 460px;
+    }
+  }
+  .section4_div2_div1_div1 .div_block_row{
+    gap: 30px;
+    .liste ul li{
+      width: auto;
+    }
+  }
+  .section5_div1 .p_section5{
+    width: 360px;
+  }
+  .section5_div2 .div_img img {
+    object-fit: cover;
+    width: 440px;
+    height: 420px;
+  }
+  footer .footer_row .footer_h2 {
+    width: 520px;
+  }
+  .footer_row2{
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+  .footer_row2_row1 .footer_row_div1{
+    flex-wrap: wrap;
+    width: 60%;
+  }
+  .footer_row2_row1 .footer_row_div2{
+    width: 40%;
+  }
+}
+/*-------------- 768px -----------------*/
+@media only screen and (max-width: 1024px) {
+  header nav {
+    z-index: 50;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    background: $btn-bg1-a;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    justify-content: flex-end;
+    animation: nav_appear 1s forwards ease-in-out;
+
+    ul {
+      height: 100vh;
+      width: 40vw;
+      background: $btn-bg2;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 80px 20px 0;
+    }
+  }
+  header nav ul {
+    .nav_link {
+      font-size: 1.5em;
+      margin: 0 0 8px;
+      padding: 8px 12px;
+
+      svg {
+        width: 25px;
+        height: 25px;
+      }
+    }
+
+    .nav_link_dropdown {
+      margin-left: 10px;
+      .dropdown{
+        border-radius: 0;
+        border-top: 1px dotted $text-header-color-a;
+        border-bottom: 1px dotted $text-header-color-a;
+        position: relative;
+        display: none;
+        width: auto;
+        height: auto;
+        margin-top: -20px;
+        margin-bottom: 12px;
+      }
+    }
+  }
+}
+@keyframes nav_appear {
+  from{
+    right: -2000px;
+  }
+  to{
+    right: 0;
+  }
 }
