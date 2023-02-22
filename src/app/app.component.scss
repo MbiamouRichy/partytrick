@@ -1192,13 +1192,12 @@ footer {
     background: $btn-bg1-a;
     display: none;
     flex-direction: row;
-    align-self: flex-end;
     justify-content: flex-end;
     animation: nav_appear 0.5s forwards ease-in-out;
 
     ul {
       height: 100vh;
-      width: 30vw;
+      width: auto;
       background: $btn-bg2;
       display: flex;
       flex-direction: column;
@@ -1346,7 +1345,14 @@ footer {
     }
     .footer_row_div2{
       margin-bottom: 2rem;
+      .footer-subscribe_form{
+        width: 70%;
+        form{
+          width: 70%;
+        }
+      }
     }
+
   }
 
   footer .footer_row2 .footer_row2_row2{
@@ -1435,13 +1441,60 @@ footer {
       height: 280px;
     }
   }
-
   .section5_div2 .div_img img {
     width: 325px;
   }
 }
-/*------------- animations ---------------*/
-@keyframes appear {
+/*--------------- < 768px ----------------*/
+@media only screen and (max-width: 767px){
+  header {
+    .logo{
+      position: relative;
+      top: 0;
+      left: -40px;
+      svg{
+        width: 143px;
+        height: 35px;
+      }
+    }
+    .btn_menu_hamburger{
+      position: relative;
+      top: -3px;
+      right: -40px;
+    }
+    button {
+      display: none;
+    }
+  }
+  main{
+    padding: 20px 20px;
+  }
+  .section1 {
+    padding-top: 40px;
+    .section1_div1 {
+      .h1_section1 {
+        font-size: 3rem;
+      }
+
+      .row1_section1_div1 .p_section1 {
+        width: auto;
+        height: auto;
+        margin-bottom: 20px;
+      }
+      .row2_section1_div1{
+        .div_btn{
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 20px;
+        }
+      }
+    }
+  }
+}
+/*======================= ANIMATION =================*/
+/*==================================================*/
+
+@keyframes appear { // for poppup
   from{
     opacity: 0;
   }
@@ -1449,7 +1502,7 @@ footer {
     opacity: 1;
   }
 }
-@keyframes nav_appear {
+@keyframes nav_appear { // for mobile navbar
   from{
     right: -2000px;
   }
