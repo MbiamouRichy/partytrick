@@ -1198,7 +1198,7 @@ footer {
 
     ul {
       height: 100vh;
-      width: 40vw;
+      width: 30vw;
       background: $btn-bg2;
       display: flex;
       flex-direction: column;
@@ -1307,6 +1307,7 @@ footer {
   }
   .section4 .section4_div2 {
     flex-direction: column;
+    gap: 2rem;
   }
   .marge {
     padding: 2rem 0;
@@ -1332,26 +1333,20 @@ footer {
     justify-content: flex-end;
     .footer_row_div1, .footer_row_div2{
       justify-content: flex-start;
+      flex-wrap: wrap;
       width: 100%;
       .paragraph{
         margin: 40px 0;
       }
       a{
-        font-size: 1rem;
+        font-size: 0.94rem;
       }
     }
-  }
- footer .footer_row2 .footer_row2_row2{
-   flex-direction: column;
-   justify-content: flex-start;
-  .footer_row_div1, .footer_row_div2 {
-    justify-content: flex-start;
-    width: 100%;
-    a{
-      font-size: 1rem;
+    .footer_row_div2{
+      margin-bottom: 2rem;
     }
   }
- }
+
   footer .footer_row2 .footer_row2_row2{
     flex-direction: column;
     justify-content: flex-start;
@@ -1359,12 +1354,15 @@ footer {
       justify-content: flex-start;
       width: 100%;
       a{
-        font-size: 1rem;
+        font-size: 0.94rem;
       }
       svg{
         width: 30px;
         height: 30px;
       }
+    }
+    .footer_row_div2{
+      margin-top: 2rem;
     }
   }
   footer .footer_row2 .footer_row2_row3{

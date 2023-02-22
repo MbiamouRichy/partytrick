@@ -90,7 +90,9 @@ export class AppComponent {
         btn_hamburger.classList.remove('active')
         // @ts-ignore
         navbar_mobile.style.display="none";
+        document.body.style.userSelect='none'
       }else{
+        document.body.style.userSelect='auto';
         // @ts-ignore
         navbar_mobile.style.display='flex'
         // @ts-ignore
