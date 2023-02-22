@@ -55,6 +55,10 @@ export class AppComponent {
     });
     // @ts-ignore
     var swiper3 = new Swiper(".mySwiper3", {
+      spaceBetween: 10,
+      loop: false,
+      centeredSlides: false,
+      slidesPerView: "auto",
       effect: "coverflow",
       coverflowEffect: {
         rotate: 0,
@@ -71,9 +75,7 @@ export class AppComponent {
         nextEl: ".mySwiper3 .swiper-button-next",
         prevEl: ".mySwiper3 .swiper-button-prev",
       },
-      loop: false,
-      centeredSlides: false,
-      slidesPerView: 3,
+
     });
     /*----------------------------- poppup --------------------*/
     let poppup = document.querySelector('.poppup');
