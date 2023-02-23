@@ -16,6 +16,9 @@ export class AppComponent {
       nav_li.forEach(all_li => all_li.classList.remove('active'))
       li.classList.add('active')
     }))
+
+    /*------------- section1 swiper ----------*/
+
     // @ts-ignore
     var swiper = new Swiper(".mySwiper", {
       effect: "cards",
@@ -32,6 +35,9 @@ export class AppComponent {
       centeredSlides: true,
       slidesPerView: 2,
     });
+
+    /*------------- section2 swiper ----------*/
+
     // @ts-ignore
     var swiper2 = new Swiper(".mySwiper2", {
       effect: "coverflow",
@@ -53,6 +59,9 @@ export class AppComponent {
       loop: true,
       centeredSlides: false,
     });
+
+    /*------------- section3 swiper ----------*/
+
     // @ts-ignore
     var swiper3 = new Swiper(".mySwiper3", {
       spaceBetween: 10,

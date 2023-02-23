@@ -191,6 +191,10 @@ nav .nav_element .nav_link_dropdown .dropdown{
       transform: rotate(45deg);
     }
   }
+  /*---------- get strated for mobile menu -----------*/
+nav .get_start_mobile_memu{
+  display: none;
+}
 
 /*================================= section1 =========================================*/
 /*==================================================================================*/
@@ -898,7 +902,9 @@ footer {
   }
 }
 
-.footer_row2_row1 .footer_row_div1, .footer_row2_row2 .footer_row_div1, .footer_row2_row3 .footer_row_div1{
+.footer_row2_row1 .footer_row_div1,
+.footer_row2_row2 .footer_row_div1,
+.footer_row2_row3 .footer_row_div1{
   @extend %div-row;
   align-items: flex-end;
   width: 70%;
@@ -925,7 +931,9 @@ footer {
     color: $main-color;
   }
 }
-.footer_row2_row1 .footer_row_div2, .footer_row2_row2 .footer_row_div2, .footer_row2_row3 .footer_row_div2{
+.footer_row2_row1 .footer_row_div2,
+.footer_row2_row2 .footer_row_div2,
+.footer_row2_row3 .footer_row_div2{
   @extend %div-row;
   justify-content: flex-end;
   width: 30%;
@@ -1674,6 +1682,9 @@ footer {
   .section4 .div_block_row .liste ul li {
     width: auto;
   }
+  .halalala .block_halalala{
+    height: auto;
+  }
   .section5 {
     flex-direction: column;
 
@@ -1741,9 +1752,52 @@ footer {
     height: auto;
   }
 }
-  /*======================= ANIMATION =================*/
-/*==================================================*/
+/*----------- Between 375px abd 425px -------*/
+@media only screen and (min-width: 375px) and (max-width: 425px) {
+  .section2 .section2_div2 .section2_div2_div1_div1 {
+    .div_img {
+      height: 292px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .section3 .section3_div1{
+    .swiper-button-next{
+      right: 300px;
+    }
+  }
 
+}
+@media only screen and (max-width: 320px) {
+  .section2 .section2_div2 .section2_div2_div1_div1 {
+    .div_img {
+      height: 220px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+}
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+  .section2 .section2_div2 .section2_div2_div1_div1 {
+    .div_img {
+      height: 258px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .section3 .section3_div1 .swiper-button-next{
+    right: 250px;
+  }
+}
+/*======================= ANIMATION =================*/
+/*==================================================*/
 @keyframes appear { // for poppup
   from{
     opacity: 0;
