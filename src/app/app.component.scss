@@ -324,7 +324,6 @@ nav .get_start_mobile_memu{
       .swiper-slide {
         @extend %clip-right;
         background: $main-color;
-        transition: all 2.5s ease;
         img {
           object-fit: cover;
           width: 570px;
@@ -371,9 +370,6 @@ nav .get_start_mobile_memu{
     font-weight: 400;
     color: $text-header-color-a;
   }
-  .h2_active{
-    color: $btn-bg1;
-  }
   .texte_explication_section2_div2{
     margin: 1em 0;
     display: none;
@@ -389,7 +385,7 @@ nav .get_start_mobile_memu{
     background: $btn-bg2;
 
     .div_charge{
-      width: 100%;
+      width: 0%;
       height: 1px;
       background: $btn-bg1;
     }
@@ -401,10 +397,20 @@ nav .get_start_mobile_memu{
     display: none;
   }
 }
-
-.section2 .texte-active{
-  display: block;
+.section2 .section2_div2_div1 .active {
+  .h2_section_div2{
+    color: $btn-bg1;
+  }
+  .texte_explication_section2_div2 {
+    display: block;
+  }
+  .charge{
+    .div_charge{
+      animation: charge 2.4s ease forwards;
+    }
+  }
 }
+
 
 /*======================================== SECTION3 ===============================*/
 /*=================================================================================*/
@@ -1414,6 +1420,63 @@ footer {
     }
   }
 }
+/*--------------------- responsive poppup ---------------------*/
+@media only screen and (max-width: 989px) {
+  .poppup .poppup_row {
+    flex-direction: column;
+    width: 292px;
+
+    .poppup_col1 {
+      width: 100%;
+      height: 260px;
+
+      .poppup_img {
+        width: 100%;
+        height: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        clip-path: polygon(100% 0, 100% 98%, 93% 97%, 89% 97%, 85% 98%, 80% 98%, 77% 97%, 75% 97%, 73% 98%, 69% 96%, 66% 96%, 63% 97%, 59% 97%, 55% 97%, 51% 96%, 48% 97%, 45% 97%, 42% 97%, 37% 97%, 33% 96%, 30% 96%, 25% 97%, 21% 96%, 19% 98%, 16% 98%, 13% 97%, 10% 96%, 6% 97%, 0 98%, 0 0);
+
+        img {
+          border-radius: 7px;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    .poppup_col2 {
+      height: auto;
+
+      .width {
+        padding: 1rem;
+
+        .h3 {
+          font-size: 1.8rem;
+        }
+
+        p {
+          font-size: 1.1rem;
+        }
+
+        .div_form {
+          .input_poppup, .input_btn {
+            min-height: 50px;
+          }
+
+          .input_btn {
+            margin-top: 1rem;
+          }
+        }
+      }
+    }
+
+    .poppup_close_btn {
+      z-index: 1;
+    }
+  }
+}
 /*----------------- between 768px and 978px --------------------*/
 @media only screen and (min-width: 768px) and  (max-width: 991px) {
 
@@ -1472,51 +1535,6 @@ footer {
     width: 325px;
   }
 
-  // poppup
-  .poppup .poppup_row{
-    flex-direction: column;
-    width: 292px;
-    .poppup_col1{
-      width: 100%;
-      height: 260px;
-      .poppup_img{
-        width: 100%;
-        height: 100%;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        clip-path: polygon(100% 0, 100% 98%, 93% 97%, 89% 97%, 85% 98%, 80% 98%, 77% 97%, 75% 97%, 73% 98%, 69% 96%, 66% 96%, 63% 97%, 59% 97%, 55% 97%, 51% 96%, 48% 97%, 45% 97%, 42% 97%, 37% 97%, 33% 96%, 30% 96%, 25% 97%, 21% 96%, 19% 98%, 16% 98%, 13% 97%, 10% 96%, 6% 97%, 0 98%, 0 0);
-        img{
-          border-radius: 7px;
-          width: 100%;
-          height: 100%;
-        }
-      }
-    }
-    .poppup_col2{
-      height: auto;
-      .width{
-        padding: 1rem;
-        .h3{
-          font-size: 1.8rem;
-        }
-        p{
-          font-size: 1.1rem;
-        }
-        .div_form{
-          .input_poppup, .input_btn{
-            min-height: 50px;
-          }
-          .input_btn{
-            margin-top: 1rem;
-          }
-        }
-      }
-    }
-    .poppup_close_btn{
-      z-index: 1;
-    }
-  }
 }
 /*--------------- < 768px ----------------*/
 @media only screen and (max-width: 767px) {
@@ -1845,6 +1863,14 @@ footer {
 }
 /*======================= ANIMATION =================*/
 /*==================================================*/
+@keyframes charge {
+  from{
+    width: 0%;
+  }
+  to{
+    width: 100%;
+  }
+}
 @keyframes appear { // for poppup
   from{
     opacity: 0;

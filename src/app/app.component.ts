@@ -133,25 +133,19 @@ export class AppComponent {
     element.forEach(element => element.classList.remove('texte-active'))
 
   }
-  loop1(){
-      let swiper = document.querySelector('#swiper1')
-      this.efface()
+  set = setInterval( () =>{
+      let swiper = document.querySelector('.section2 .swiper-slide-active');
+      let paragraph_all = document.querySelectorAll('.section2_div2_div1_div1')
          // @ts-ignore
-      swiper.className += ' texte-active';
-  }
-  loop2(){
-    let swiper = document.querySelector('#swiper3')
-    this.efface()
-    // @ts-ignore
-    swiper.className += ' texte-active';
-  }
-  loop3(){
-    let swiper = document.querySelector('#swiper2')
-    this.efface()
-    // @ts-ignore
-    swiper.className += ' texte-active';
-  }
-  // recuperation de la date
+      let i = swiper.id;
+      let paragraph = document.querySelector(`#swiper${i}`);
+        // @ts-ignore
+      paragraph_all.forEach(p => p.classList.remove('active'));
+      // @ts-ignore
+      paragraph.className += ' active';
+      }, 2600
+  )
+  // recuperation de l'annee '
   date =  new Date().getFullYear();
   // close poppup
   close(){

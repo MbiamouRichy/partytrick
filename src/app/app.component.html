@@ -1,5 +1,4 @@
-  <!----------------------- navbar ----------------------------->
-
+  <!----------------------------------- NAVBAR --------------------------------->
   <header>
     <div class="logo">
       <svg viewBox="0 0 170 43" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -43,6 +42,7 @@
       </div>
     </div>
   </header>
+  <!------------------------------------- MAIN --------------------------------->
   <main>
   <!------------------------------------ SECTION1 -------------------------------->
   <section class="section1">
@@ -100,13 +100,13 @@
     <div class="section2_div1">
       <div class="swiper mySwiper2">
         <div class="swiper-wrapper">
-          <div (change)="loop1()" class="swiper-slide">
+          <div id="1" class="swiper-slide">
             <img src="assets/image/6398b47ccf63034f8ca174d4_Plan-Like-A-Pro-p-800.webp" alt="image5">
           </div>
-          <div (change)="loop2()" class="swiper-slide">
+          <div id="2" class="swiper-slide">
             <img src="assets/image/6398cdc9bb181e0f4657fe76_BRING-IT-TO-LIFE-p-800.webp" alt="image6">
           </div>
-          <div (change)="loop3()" class="swiper-slide">
+          <div id="3" class="swiper-slide">
             <img src="assets/image/6398cdbc5ad80679a3f7ab70_PICK-YOUR-PARTY.webp" alt="image7">
           </div>
         </div>
@@ -117,9 +117,9 @@
         HOW IT WORKS
       </p>
       <div class="section2_div2_div1">
-        <div class="section2_div2_div1_div1">
-          <h2 class="h2_section_div2 h2_active">Pick your party</h2>
-          <div id="swiper1" class="texte_explication_section2_div2">
+        <div id="swiper1" class="section2_div2_div1_div1 active">
+          <h2 class="h2_section_div2">Pick your party</h2>
+          <div class="texte_explication_section2_div2">
               <p>
                 Something for every host, our curated parties cover casual
                 to fancy, low-key to festive, and minimal to maximal occasions.
@@ -132,9 +132,9 @@
             <div class="div_charge"></div>
           </div>
         </div>
-        <div class="section2_div2_div1_div1">
+        <div id="swiper2" class="section2_div2_div1_div1">
           <h2 class="h2_section_div2">Bring it to life</h2>
-          <div id="swiper2" class="texte_explication_section2_div2">
+          <div class="texte_explication_section2_div2">
             <p>
               We go way beyond the basics when it comes to throwing a party. Including a unique,
               curated moment with links to purchase (think tablescape!),
@@ -150,9 +150,9 @@
             <div class="div_charge"></div>
           </div>
         </div>
-        <div class="section2_div2_div1_div1">
+        <div id="swiper3" class="section2_div2_div1_div1">
           <h2 class="h2_section_div2">Plan like a pro</h2>
-          <div id="swiper3" class="texte_explication_section2_div2 texte-active">
+          <div  class="texte_explication_section2_div2">
             <p>
               Friendly reminders (we text you, just like your pals) and thorough checklists make sure the cake gets ordered,
               the invites go out, the dishwasher is empty when your guests arrive, and of course, you have time to freshen up.
