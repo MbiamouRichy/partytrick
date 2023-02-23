@@ -100,10 +100,12 @@ export class AppComponent {
       if ( navbar_mobile.style.display=='flex'){
         // @ts-ignore
         btn_hamburger.classList.remove('active')
+        document.body.style.overflow="auto"
         // @ts-ignore
         navbar_mobile.style.display="none";
         document.body.style.userSelect='none'
       }else{
+        document.body.style.overflow="hidden"
         document.body.style.userSelect='auto';
         // @ts-ignore
         navbar_mobile.style.display='flex'

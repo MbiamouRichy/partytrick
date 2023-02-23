@@ -1861,6 +1861,11 @@ footer {
     right: 250px;
   }
 }
+@media only screen and (max-width: 313px) {
+ .section3 .section3_div1 .swiper-button-next{
+   right: 0;
+ }
+}
 /*======================= ANIMATION =================*/
 /*==================================================*/
 @keyframes charge {
