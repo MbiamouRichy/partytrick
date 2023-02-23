@@ -133,6 +133,7 @@ export class AppComponent {
     element.forEach(element => element.classList.remove('texte-active'))
 
   }
+  /*-------------- section 2 carousel -----------------*/
   set = setInterval( () =>{
       let swiper = document.querySelector('.section2 .swiper-slide-active');
       let paragraph_all = document.querySelectorAll('.section2_div2_div1_div1')
@@ -143,9 +144,24 @@ export class AppComponent {
       paragraph_all.forEach(p => p.classList.remove('active'));
       // @ts-ignore
       paragraph.className += ' active';
+      if (document.body.offsetWidth < 768) {
+        // @ts-ignore
+      clearInterval(this.set);
+    }
       }, 2600
   )
-  // recuperation de l'annee '
+  // Mobile swiper
+  set_mobile = setInterval(()=>{
+    let paragraph_all = document.querySelectorAll('.section2_div2_div1_div1')
+    paragraph_all.forEach(p => p.addEventListener('click', ()=>{
+      paragraph_all.forEach(all_p => all_p.classList.remove('active'))
+      p.classList.add('active');
+    }));
+    if (document.body.offsetWidth > 768){
+      clearInterval(this.set_mobile)
+    }
+  }, 1)
+  // recuperation de l'annee
   date =  new Date().getFullYear();
   // close poppup
   close(){
