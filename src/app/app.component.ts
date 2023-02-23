@@ -87,9 +87,10 @@ export class AppComponent {
 
     });
     /*----------------------------- poppup --------------------*/
+
     let poppup = document.querySelector('.poppup');
     // @ts-ignore
-   // poppup.classList.add('poppup_active');
+     poppup.classList.add('poppup_active');
      // Affichage de la navbar an mobile
     let btn_hamburger = document.querySelector('.btn_menu_hamburger');
     // @ts-ignore
